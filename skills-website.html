@@ -2411,7 +2411,10 @@ button, .pill, .demo-link, .download-btn, .lang-btn, .flow-pill-btn {
         </div>
       </div>
     </div></div>
-  </section></main><footer class="site-footer"><div><strong data-i18n="brand">Skills, Your Way</strong><p data-i18n="footer-text">HITAP/P&D/Data Team</p></div><a class="back-top" href="#top" data-i18n="back-top">Back to top ↑</a></footer><div class="glossary-pop" role="status" hidden></div><script>
+  </section></main><footer class="site-footer"><div><strong data-i18n="brand">Skills, Your Way</strong><p data-i18n="footer-text">HITAP/P&D/Data Team</p></div><a class="back-top" href="#top" data-i18n="back-top">Back to top ↑</a></footer><div class="glossary-pop" role="status" hidden></div><!-- Firebase Realtime Database SDK -->
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database-compat.js"></script>
+<script>
 const menu=document.querySelector('.menu-toggle'),nav=document.querySelector('.site-nav');menu.onclick=()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',open)};nav.querySelectorAll('a').forEach(a=>a.onclick=()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false')});
 const glossary={"scripts/":"ชุดโค้ดช่วยทำงาน ซึ่งอาจต้องใช้เครื่องมือเพิ่มเติม",model:"โมเดล AI ที่ประมวลผลและสร้างคำตอบ"};const popup=document.querySelector('.glossary-pop');document.querySelectorAll('.gl').forEach(el=>{const def=glossary[el.textContent.trim()];if(!def)return;el.tabIndex=0;el.setAttribute('role','button');el.title=def;el.onclick=e=>{e.stopPropagation();popup.textContent=el.textContent+' — '+def;popup.hidden=false};el.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();el.click()}}});document.addEventListener('click',()=>popup.hidden=true);document.addEventListener('keydown',e=>{if(e.key==='Escape'){popup.hidden=true;nav.classList.remove('open');menu.setAttribute('aria-expanded','false')}});
 
@@ -3311,35 +3314,30 @@ document.querySelectorAll('.copy-btn').forEach(btn=>{
   // Start in No Skill mode initially and keep looping continuously
   setMode('noskill');
 })();
-// --- PANDA White Window Chat Logic (Clean Text Card) ---
+// --- PANDA White Window Chat Logic (Realtime with Firebase) ---
 (function() {
-  const defaultMessages = [];
+  const firebaseConfig = {
+    apiKey: "AIzaSyDwExZTzTxszqjYkPtb_PaCO8RN_9vCzCU",
+    authDomain: "panda-live-7c70b.firebaseapp.com",
+    databaseURL: "https://panda-live-7c70b-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "panda-live-7c70b",
+    storageBucket: "panda-live-7c70b.firebasestorage.app",
+    messagingSenderId: "974771399853",
+    appId: "1:974771399853:web:e9e3e4e947e9792cd5ea24",
+    measurementId: "G-QZZVN897S0"
+  };
 
-  const STORAGE_KEY = 'hitap_panda_clean_window_v7';
-
-  // Purge previous test keys so the window starts as a clean, blank white display
-  try {
-    localStorage.removeItem('hitap_panda_clean_window_v6');
-    localStorage.removeItem('hitap_panda_clean_window_v5');
-    localStorage.removeItem('hitap_panda_clean_window_v4');
-    localStorage.removeItem('hitap_panda_messages');
-  } catch(e) {}
-
-  function getStoredMessages() {
+  let messagesRef = null;
+  if (typeof firebase !== 'undefined') {
     try {
-      const saved = localStorage.getItem(STORAGE_KEY);
-      if (saved) {
-        const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+      if (!firebase.apps || !firebase.apps.length) {
+        firebase.initializeApp(firebaseConfig);
       }
-    } catch(e) {}
-    return defaultMessages;
-  }
-
-  function saveStoredMessages(msgs) {
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(msgs));
-    } catch(e) {}
+      const db = firebase.database();
+      messagesRef = db.ref('panda_live_messages');
+    } catch(err) {
+      console.warn('Firebase init error:', err);
+    }
   }
 
   function formatTime() {
@@ -3355,6 +3353,8 @@ document.querySelectorAll('.copy-btn').forEach(btn=>{
   const charCounter = document.getElementById('mac-char-counter');
   const emojiToggle = document.getElementById('mac-emoji-toggle');
   const emojiDrawer = document.getElementById('mac-emoji-drawer');
+
+  let currentMessages = [];
 
   function renderMessageItem(m) {
     const item = document.createElement('div');
@@ -3397,8 +3397,22 @@ document.querySelectorAll('.copy-btn').forEach(btn=>{
     }
   }
 
-  let chatList = getStoredMessages();
-  renderAllMessages(chatList, true);
+  // Real-time listener for incoming messages from all users
+  if (messagesRef) {
+    messagesRef.limitToLast(120).on('value', (snapshot) => {
+      const data = snapshot.val();
+      const msgs = [];
+      if (data) {
+        Object.keys(data).forEach(key => {
+          msgs.push({ id: key, ...data[key] });
+        });
+      }
+      currentMessages = msgs;
+      renderAllMessages(msgs, true);
+    }, (error) => {
+      console.error('Realtime Database listen error:', error);
+    });
+  }
 
   // Character Counter update
   function updateCharCount() {
@@ -3418,7 +3432,7 @@ document.querySelectorAll('.copy-btn').forEach(btn=>{
     input.addEventListener('input', updateCharCount);
   }
 
-  // Form submission (Author is always PANDA, max 500 chars)
+  // Form submission (Broadcasting live to Firebase)
   if (form && input) {
     form.addEventListener('submit', function(e) {
       e.preventDefault();
@@ -3426,16 +3440,18 @@ document.querySelectorAll('.copy-btn').forEach(btn=>{
       if (!text) return;
 
       const trimmedText = text.slice(0, 500);
-
       const newMsg = {
-        id: 'msg_' + Date.now(),
         text: trimmedText,
-        time: formatTime()
+        time: formatTime(),
+        createdAt: Date.now()
       };
 
-      chatList.push(newMsg);
-      saveStoredMessages(chatList);
-      renderAllMessages(chatList, true);
+      if (messagesRef) {
+        messagesRef.push(newMsg);
+      } else {
+        currentMessages.push(newMsg);
+        renderAllMessages(currentMessages, true);
+      }
 
       input.value = '';
       updateCharCount();
@@ -3474,7 +3490,7 @@ document.querySelectorAll('.copy-btn').forEach(btn=>{
   });
 
   window.refreshChatLanguage = () => {
-    renderAllMessages(chatList, false);
+    renderAllMessages(currentMessages, false);
   };
 })();
 
