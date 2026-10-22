@@ -1,0 +1,7 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/skills-website", "destination": "/index.html" },
+    { "source": "/skills-website.html", "destination": "/index.html" }
+  ]
+}
