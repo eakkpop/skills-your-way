@@ -1,0 +1,3490 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="A basic guide to AI Skills, with a guided kien-thai demonstration."><title>Skills, Your Way · Basic Guide</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;600&family=IBM+Plex+Mono&display=swap"><style>
+:root{--ink:#151515;--muted:#5b5b57;--lime:#f3ff94;--lavender:#aaa4ed;--blue:#c4eaf5;--green:#99e2b1;--line:#242424;--font-body:"IBM Plex Sans","IBM Plex Sans Thai",Arial,sans-serif;--font-mono:"IBM Plex Mono",monospace}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;color:var(--ink);background:#fff;font-family:var(--font-body);font-size:18px;line-height:1.55}a{color:inherit;text-underline-offset:5px}button,summary{cursor:pointer}button{font:inherit}a:focus-visible,button:focus-visible,summary:focus-visible,.gl:focus-visible{outline:3px solid #8780d4;outline-offset:5px}.site-header{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:10;padding:21px 5%;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-size:24px;letter-spacing:-1px;text-decoration:underline}.site-nav{display:flex;gap:28px;font-size:15px}.site-nav a{text-decoration:none}.site-nav a:hover{text-decoration:underline}.menu-toggle{display:none;background:none;border:0}.hero{max-width:1440px;margin:auto;padding:65px 5% 80px}.hero-top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #111;padding-bottom:26px;font-size:13px;text-transform:uppercase;letter-spacing:.09em}.hero-mark{font-size:52px;line-height:1}.hero h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(56px,7.7vw,112px);line-height:.98;letter-spacing:-.055em;max-width:1100px;margin:40px 0 44px}.hero-bottom{display:grid;grid-template-columns:1fr 1fr;gap:9%;border-top:1px solid #111;padding-top:32px}.hero-bottom p{font-size:22px;margin:0 0 24px;max-width:510px}.topics{display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:18px;align-content:start}.topics a{display:flex;gap:12px;align-items:center;text-decoration:none}.dot{width:17px;height:17px;border-radius:50%;background:var(--lavender);flex-shrink:0}.topics a:nth-child(2) .dot{background:var(--blue)}.topics a:nth-child(3) .dot{background:var(--green)}.topics a:nth-child(4) .dot{background:#d7d7d7}.pill,.demo-link,.reveal{display:inline-block;border:1px solid #111;background:var(--lime);border-radius:40px;padding:13px 29px;text-decoration:none;font-size:16px}.pill:hover,.demo-link:hover,.reveal:hover{background:#e6f678}.page{max-width:1440px;margin:auto}.chapter{padding:65px 5%;border-top:1px solid #111;scroll-margin-top:20px}.slide-inner{display:grid;gap:24px}.kicker{display:flex;align-items:center;gap:12px;font-size:13px;letter-spacing:.08em;text-transform:uppercase}.kicker:before{content:'';width:14px;height:14px;flex-shrink:0;border-radius:50%;background:var(--lavender)}.chapter:nth-child(3n) .kicker:before{background:var(--blue)}.chapter:nth-child(2n) .kicker:before{background:var(--green)}h2{font-family:Georgia,serif;font-size:clamp(36px,4.4vw,66px);font-weight:400;letter-spacing:-.04em;line-height:1.08;margin:0 0 16px;max-width:1000px}.stack{display:grid;gap:24px}.facts{list-style:none;padding:0;margin:0;max-width:920px}.facts li{padding:16px 0;border-top:1px solid #ddd;font-size:22px}.small{font-size:16px;color:var(--muted);margin:0}.optional{font-style:italic}.cols{display:grid;grid-template-columns:1fr 1fr;gap:7%;align-items:start}.tree{background:#f6f6f2;padding:32px;font-family:var(--font-mono);font-size:18px;border:1px solid #111;display:grid;gap:25px}.mono{font-family:var(--font-mono)}.checks{display:grid;gap:26px}.check{display:grid;grid-template-columns:20px 1fr;gap:14px}.box{background:var(--lavender);width:15px;height:15px;border-radius:50%;margin-top:12px}.check:nth-child(2) .box{background:var(--blue)}.check:nth-child(3) .box{background:var(--green)}.check strong{font-family:Georgia,serif;font-size:30px;font-weight:400;display:block}.check span{color:#555;font-size:17px}.check .eg{display:block;font-size:15px;margin-top:7px}.demo-slide .slide-inner{display:grid;grid-template-columns:1fr 1fr;column-gap:9%}.demo-slide .kicker{grid-column:1/-1}.demo-slide h2{font-size:clamp(38px,4.5vw,65px)}.demo-slide p{margin:0 0 25px;font-size:21px}.chapter:has(.demo-slide){background:#fafaf6}.layers{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.layer{padding:28px 24px;background:#eeecff;border-top:1px solid #111;display:grid;align-content:start;gap:16px}.layer:nth-child(2){background:#e7f6fb}.layer:nth-child(3){background:#e9f7ed}.layer .step{font-size:13px;text-transform:uppercase;letter-spacing:.08em}.layer b{font-size:21px}.reveal{justify-self:start;background:white}.layer[hidden]{display:none}.checkline{border-top:1px solid #111;padding-top:24px}.next{border-top:1px solid #111;padding-top:24px;display:flex;align-items:center;justify-content:space-between}.next b{font-family:Georgia,serif;font-size:60px;font-weight:400}.gl{border-bottom:1px dotted #111;cursor:help}.gl:after{content:'ⓘ';font-size:.7em;vertical-align:super;margin-left:2px}.glossary-pop{position:fixed;bottom:25px;left:50%;transform:translateX(-50%);background:var(--lime);border:1px solid #111;padding:20px 25px;width:min(500px,90vw);box-shadow:4px 4px #111;z-index:30;font-size:16px}.glossary-pop[hidden]{display:none}.site-footer{background:var(--lime);border-top:1px solid #111;padding:40px 5%;display:flex;justify-content:space-between;gap:30px;font-size:15px}.site-footer strong{font-size:25px;font-family:Georgia,serif;font-weight:400}.site-footer p{margin:8px 0}.back-top{align-self:center}.skip{position:absolute;top:-60px;left:10px;background:var(--lime);padding:10px;z-index:20}.skip:focus{top:10px}@media(min-width:1440px){.chapter{padding-inline:72px}}@media(max-width:760px){.site-header{padding:17px 6%}.brand{font-size:21px}.menu-toggle{display:block}.site-nav{display:none;position:absolute;top:69px;left:0;right:0;background:white;border-bottom:1px solid #111;padding:25px 6%;flex-direction:column;gap:18px}.site-nav.open{display:flex}.hero{padding:40px 6% 48px}.hero-top{font-size:10px}.hero h1{font-size:clamp(48px,11vw,76px);margin-block:30px}.hero-bottom{grid-template-columns:1fr;gap:30px}.hero-bottom p{font-size:19px}.chapter{padding:45px 6%}.cols,.demo-slide .slide-inner,.layers{grid-template-columns:1fr;gap:30px}.demo-slide .kicker{grid-column:auto}.facts li{font-size:19px}.site-footer{flex-direction:column;padding:35px 6%}.back-top{align-self:start}.tree{padding:24px;font-size:16px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{.site-header,.reveal,.demo-link,.glossary-pop{display:none}.chapter{break-inside:avoid}.layer[hidden]{display:grid}}
+</style><style id="polish">/* Refined editorial layout */
+:root{--paper:#fffef9;--ink:#20211e;--muted:#66665e;--lime:#edfa91;--lavender:#b2a8ed;--blue:#c9e8f0;--green:#a5dbb5}body{background:var(--paper);-webkit-font-smoothing:antialiased}.site-header{background:var(--paper);padding:22px max(5%,calc((100vw - 1280px)/2));}.brand{font-family:Georgia,serif;font-size:27px;text-decoration:none;letter-spacing:-1.2px}.site-nav{gap:34px}.site-nav a{color:#5d5e54}.site-nav a:hover{color:#111}.hero{padding-top:48px;padding-bottom:76px}.hero-top{border:0;padding-bottom:0;align-items:center;color:#66665e}.hero-mark{font-size:44px;color:#252622}.hero h1{font-size:clamp(60px,8.1vw,114px);max-width:1100px;line-height:1.02;letter-spacing:-.065em;margin:28px 0 44px}.hero h1 em{font-weight:400;color:#777099}.hero-bottom{grid-template-columns:1fr 1fr;gap:10%;padding-top:30px}.hero-bottom p{font-size:20px;line-height:1.55;color:#4f5048}.topics{font-size:16px;gap:23px 25px;padding-top:6px}.topics a:hover{text-decoration:underline}.pill{min-width:250px;text-align:center;padding:15px 25px}.chapter{padding-top:80px;padding-bottom:64px}.slide-inner{gap:26px}.kicker{font-size:12px;letter-spacing:.12em;color:#626357}.chapter h2{max-width:1000px;font-size:clamp(38px,4.7vw,64px);line-height:1.12;letter-spacing:-.045em;margin-bottom:13px}.chapter#s1 h2{font-size:clamp(35px,3.6vw,53px)}.chapter#s1 .stack{align-content:start;padding-top:6px;gap:24px}.facts li{font-size:20px;line-height:1.5;padding-block:18px}.facts li:first-child{border-top:0;padding-top:0}.small.optional{font-size:15px;color:#77786d;line-height:1.7}.chapter:has(.demo-slide){background:#f0f0e8}.demo-slide .slide-inner{column-gap:12%;row-gap:26px}.demo-slide h2{font-size:clamp(40px,4.8vw,67px);max-width:480px}.demo-slide p{font-size:19px;line-height:1.7;color:#55574b;max-width:510px}.demo-link{background:transparent;padding:12px 28px;font-size:15px}.demo-link:hover{background:var(--lime)}#s2 .kicker:before{background:#a8a0db}#s4 .kicker:before{background:#9ccbad}#s5 .kicker:before{background:#9cc9dc}.tree{background:#f0f1e9;padding:30px 32px;border-color:#c6c8b8;gap:26px}.cols{gap:8%;margin-top:8px}.checks{gap:22px}.check{padding-bottom:20px;border-bottom:1px solid #dedfd4}.check:last-child{border:0;padding-bottom:0}.check strong{font-size:31px;margin-bottom:4px}.check span{font-size:16px}.check .eg{font-size:13px;color:#77786e}.layer{border:0;padding:30px 26px;min-height:220px;gap:20px}.layer .step{font-size:11px;letter-spacing:.13em}.layer b{font-family:Georgia,serif;font-weight:400;font-size:27px;line-height:1.25}.layer .small{line-height:1.65;font-size:16px}.reveal{font-size:13px;padding:9px 20px;background:transparent;border-color:#a9aa9d}.checkline{border-color:#bfc1b2;font-size:17px;color:#5c5e51}.chapter#s-close{background:#eaf49f;padding-top:74px;padding-bottom:56px}.chapter#s-close h2{max-width:1050px;font-size:clamp(42px,5.3vw,76px)}#s-close .facts{max-width:850px}#s-close .facts li{border-color:#c0cb7d;font-size:19px}#s-close .next{border-color:#9daa5c}.site-footer{background:var(--paper);padding-top:36px;padding-bottom:36px}.site-footer strong{font-size:25px}.site-footer p{font-size:13px;color:#77786d}.back-top{font-size:13px}.chapter-number{font-family:var(--font-mono);font-size:11px;color:#88897d;margin-left:auto}.reading-progress{position:fixed;top:0;left:0;height:3px;background:#8982b5;z-index:50;width:0;pointer-events:none}@media(min-width:1500px){.page,.hero{max-width:1400px}.site-footer{padding-inline:max(5%,calc((100vw - 1260px)/2))}}@media(max-width:760px){.site-header{padding:18px 6%}.brand{font-size:24px}.hero{padding-top:34px;padding-bottom:48px}.hero h1{font-size:clamp(46px,11vw,78px);margin-block:24px 32px}.hero-top{font-size:9px;letter-spacing:.05em}.hero-mark{font-size:33px}.hero-bottom{grid-template-columns:1fr;gap:30px}.topics{font-size:14px;gap:20px}.hero-bottom p{font-size:18px}.chapter{padding:48px 6%}.chapter h2,.chapter#s1 h2{font-size:38px}.chapter#s-close h2{font-size:44px}.demo-slide .slide-inner{grid-template-columns:1fr;gap:18px}.demo-slide h2{margin-bottom:4px}.demo-slide p{font-size:18px}.layer{min-height:0}.cols{gap:32px}.tree{padding:24px}.site-footer{padding:30px 6%}.chapter-number{font-size:10px}.facts li{font-size:18px}.site-nav{top:74px;background:var(--paper)}}
+
+/* Hero intro concepts */
+.hero h1{font-size:clamp(40px,5.4vw,80px);line-height:1.06;max-width:15em;text-wrap:balance}
+.hero-concepts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;border-top:1px solid #111;padding-top:28px}
+.concept{background:#fff;border:1px solid #dedfd4;border-radius:12px;padding:20px 22px}
+.concept h3{display:flex;align-items:center;gap:10px;font-size:17px;margin:0 0 8px}
+.concept-icon{width:20px;height:20px;flex-shrink:0;fill:none;stroke:var(--lavender);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.concept:nth-child(2) .concept-icon{stroke:#8fcadb}.concept:nth-child(3) .concept-icon{stroke:#7fc495}.hero-care strong{display:inline-flex;align-items:center;gap:8px}.hero-care .concept-icon{stroke:var(--ink)}
+.concept p{margin:0;font-size:15.5px;color:#4f5048;line-height:1.6}
+.hero-care{margin-top:16px;padding:14px 22px;border-radius:12px;background:#f0f0e8;display:flex;gap:14px;align-items:baseline;font-size:15px;color:#4f5048}.hero-care strong{white-space:nowrap;color:var(--ink)}.hero-care p{margin:0}
+@media(max-width:760px){.hero h1{font-size:clamp(34px,9vw,52px)}.hero-care{flex-direction:column;gap:4px}}
+
+/* Takeaways Table (3 สิ่งที่อยากให้จำ) - Unified Font Style */
+.takeaways-card{background:#ffffff;border:1px solid #111111;border-radius:12px;padding:30px 34px 26px;margin:12px 0 24px;max-width:980px;box-shadow:4px 4px 0 #111111;font-family:var(--font-body)}
+.takeaways-card-header{display:flex;align-items:center;justify-content:space-between;padding-bottom:14px;border-bottom:1.5px solid #111111;margin-bottom:4px}
+.takeaways-card-title{font-family:var(--font-body);font-size:24px;font-weight:600;color:#111111;letter-spacing:-0.01em;margin:0}
+.takeaways-tag{font-family:var(--font-body);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;padding:3px 10px;border-radius:14px;background:var(--lime);color:#151515;border:1px solid #111}
+.takeaways-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.takeaways-table{width:100%;border-collapse:collapse;text-align:left;font-family:var(--font-body)}
+.takeaways-table th{font-family:var(--font-body);color:#55574c;font-weight:600;font-size:14px;padding:14px 16px 12px 0;border-bottom:1.5px solid #111111;white-space:nowrap}
+.takeaways-table td{padding:18px 20px 18px 0;border-bottom:1px solid #e5e7dc;vertical-align:top}
+.takeaways-table tr:last-child td{border-bottom:none;padding-bottom:6px}
+.takeaways-table .col-num{width:50px;padding-right:16px}
+.takeaways-num-badge{width:28px;height:28px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-family:var(--font-body);font-size:14px;font-weight:600;border:1px solid #111;box-shadow:1px 1px 0 #111}
+.num-badge-1{background:var(--lavender);color:#111}
+.num-badge-2{background:var(--blue);color:#111}
+.num-badge-3{background:var(--green);color:#111}
+.takeaways-table .col-en{width:33%;min-width:210px;padding-right:26px;font-family:var(--font-body);font-weight:600;font-size:18px;line-height:1.45;color:#111111}
+.takeaways-table .col-th{font-family:var(--font-body);font-size:16.5px;line-height:1.65;color:#2e3027}
+@media(max-width:760px){
+  .takeaways-card{padding:20px 18px;border-radius:10px;box-shadow:3px 3px 0 #111}
+  .takeaways-card-title{font-size:20px}
+  .takeaways-table th{font-size:13px;padding:10px 12px 10px 0}
+  .takeaways-table td{padding:14px 14px 14px 0}
+  .takeaways-table .col-en{font-size:16px;min-width:160px;padding-right:16px}
+  .takeaways-table .col-th{font-size:15px}
+}
+
+/* Q&A Section Heading */
+.qa-heading-block{margin:38px 0 16px}
+.qa-heading{font-family:Georgia,serif;font-size:clamp(42px,5.3vw,76px);font-weight:400;letter-spacing:-.045em;line-height:1.08;margin:0 0 10px;color:var(--ink)}
+@media(max-width:760px){
+  .qa-heading{font-size:44px}
+  .qa-heading-block{margin:28px 0 12px}
+}
+
+/* Language Switcher (Top Right) */
+.site-header{position:sticky;top:0;z-index:100;background:var(--paper)}
+.header-right{display:flex;align-items:center;gap:24px}
+.lang-switcher{
+  display:inline-flex;
+  align-items:center;
+  background:#eaece1;
+  border:1.5px solid #181914;
+  border-radius:24px;
+  padding:2px;
+  box-shadow:1.5px 1.5px 0 #181914;
+  gap:2px;
+  flex-shrink:0;
+}
+.lang-btn{
+  background:transparent;
+  border:0;
+  border-radius:18px;
+  padding:4px 11px;
+  font-family:var(--font-body);
+  font-size:12px;
+  font-weight:700;
+  color:#525447;
+  cursor:pointer;
+  transition:all .2s ease;
+  line-height:1.2;
+}
+.lang-btn:hover{color:#181914}
+.lang-btn.active{
+  background:#181914;
+  color:#ffffff;
+  box-shadow:0 1px 4px rgba(0,0,0,0.18);
+}
+@media(max-width:760px){
+  .header-right{gap:10px}
+  .lang-switcher{padding:2px}
+  .lang-btn{padding:3px 8px;font-size:11px}
+}
+
+/* Workflow Comparison Flow Animation - Modern High-End Simulator */
+.chapter#s1 .slide-inner{display:grid!important;grid-template-columns:1fr!important;gap:26px!important;max-width:1160px!important;width:100%}
+.chapter#s1 h2{max-width:1080px!important}
+
+/* Main Framed Window Container (สอดคล้องกับขนาดจอ พรีเมียมโมเดิร์น) */
+.skill-flow-frame{
+  background:#ffffff;
+  border:1.5px solid #181914;
+  border-radius:18px;
+  box-shadow:0 20px 48px -12px rgba(24,25,20,0.08), 4px 4px 0 #181914;
+  margin:12px 0 24px;
+  overflow:hidden;
+  font-family:var(--font-body);
+  max-width:1120px;
+  width:100%;
+  transition:all .35s cubic-bezier(0.16,1,0.3,1);
+  position:relative;
+}
+
+/* Window Header Bar */
+.flow-frame-topbar{
+  background:#f5f6ed;
+  border-bottom:1.5px solid #181914;
+  padding:13px 22px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap;
+}
+.frame-window-controls{display:flex;align-items:center;gap:8px}
+.f-ctrl{width:11px;height:11px;border-radius:50%;border:1px solid rgba(0,0,0,0.3);display:inline-block;box-shadow:inset 0 1px 2px rgba(255,255,255,0.4)}
+.f-ctrl-red{background:#ff5f56}
+.f-ctrl-yellow{background:#ffbd2e}
+.f-ctrl-green{background:#27c93f}
+.frame-app-title{font-size:14px;font-weight:600;color:#24261e;letter-spacing:-0.01em;display:flex;align-items:center;gap:10px}
+.frame-live-badge{
+  font-family:var(--font-mono);
+  font-size:10px;
+  font-weight:700;
+  padding:2px 8px;
+  border-radius:12px;
+  background:#181914;
+  color:#fff;
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  letter-spacing:.04em;
+}
+.live-dot{width:6px;height:6px;border-radius:50%;background:#38e052;box-shadow:0 0 8px #38e052;animation:livePulse 1.4s infinite}
+@keyframes livePulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.75)}}
+
+/* Mode Segmented Switch */
+.flow-pill-selector{
+  display:inline-flex;
+  background:#eaece1;
+  padding:3px;
+  border-radius:30px;
+  border:1.5px solid #181914;
+  box-shadow:1.5px 1.5px 0 #181914;
+  gap:3px;
+}
+.flow-pill-btn{
+  background:transparent;
+  border:0;
+  border-radius:20px;
+  padding:6px 15px;
+  font-family:var(--font-body);
+  font-size:13px;
+  color:#4f5144;
+  cursor:pointer;
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  transition:all .22s cubic-bezier(0.16,1,0.3,1);
+  font-weight:600;
+}
+.flow-pill-btn:hover{color:#181914;background:rgba(255,255,255,0.5)}
+.flow-pill-btn.active{background:#181914;color:#ffffff;font-weight:700;box-shadow:0 2px 6px rgba(0,0,0,0.12)}
+.flow-pill-btn#btn-mode-withskill.active{background:var(--lime);color:#181914;border:1px solid #181914}
+.pill-dot{width:7px;height:7px;border-radius:50%;display:inline-block;transition:all .2s ease}
+.dot-noskill{background:#8c8f82}
+.dot-withskill{background:#181914}
+.flow-pill-btn.active .dot-noskill{background:#ffffff}
+.flow-pill-btn.active .dot-withskill{background:#181914}
+
+/* Frame Body */
+.flow-frame-body{padding:24px 26px 28px;background:#fbfcf8}
+
+/* Mode Explanation Banner */
+.flow-mode-banner{
+  padding:12px 18px;
+  border-radius:12px;
+  font-size:14px;
+  line-height:1.5;
+  margin-bottom:24px;
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  grid-template-areas:"tag text count";
+  align-items:center;
+  gap:14px;
+  transition:all .3s ease;
+  border:1.5px solid transparent;
+}
+.banner-noskill{background:#f1f2e8;border-color:#d4d7c7;color:#393b30}
+.banner-withskill{background:#f8ffe0;border-color:#bed539;color:#222806}
+.banner-tag{
+  grid-area:tag;
+  font-size:11px;
+  font-weight:700;
+  padding:3px 10px;
+  border-radius:12px;
+  border:1.2px solid #181914;
+  background:#ffffff;
+  color:#181914;
+  white-space:nowrap;
+  box-shadow:1px 1px 0 #181914;
+}
+.banner-withskill .banner-tag{background:var(--lime)}
+.banner-text-wrap{
+  grid-area:text;
+  display:flex;
+  align-items:center;
+  min-width:0;
+}
+#banner-text{
+  white-space:normal;
+  word-break:break-word;
+}
+.banner-count-badge{
+  grid-area:count;
+  justify-self:end;
+  font-size:11.5px;
+  font-weight:600;
+  padding:2px 10px;
+  border-radius:20px;
+  background:rgba(0,0,0,0.06);
+  white-space:nowrap;
+  display:inline-flex;
+  align-items:center;
+  gap:4px;
+}
+
+/* Fluid Pipeline Layout */
+.pipeline-layout{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  position:relative;
+  width:100%;
+}
+
+/* 3-Column Grid per Row */
+.pipeline-row{
+  display:grid;
+  grid-template-columns:1fr clamp(24px,3.5vw,44px) 1fr clamp(24px,3.5vw,44px) 1fr;
+  align-items:stretch;
+  gap:0;
+  width:100%;
+}
+
+/* Intermediate Flow Bridge between Row 1 & Row 2 */
+.pipeline-bridge{
+  max-height:0;
+  opacity:0;
+  overflow:hidden;
+  transition:max-height .45s cubic-bezier(0.16,1,0.3,1), opacity .35s ease, margin .35s ease;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  margin:0;
+  width:100%;
+}
+.skill-flow-frame.mode-withskill .pipeline-bridge{
+  max-height:64px;
+  opacity:1;
+  margin:6px 0;
+}
+.bridge-line{
+  flex:1;
+  height:1.5px;
+  background:dashed;
+  border-top:1.5px dashed #c8cbd5;
+}
+.bridge-pill{
+  background:#ffffff;
+  border:1.5px solid #181914;
+  box-shadow:2px 2px 0 #181914;
+  border-radius:20px;
+  padding:5px 14px;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:12px;
+  font-weight:600;
+  color:#24261e;
+  z-index:2;
+  transition:all .25s ease;
+}
+.pipeline-bridge.active .bridge-pill{
+  background:var(--lime);
+  transform:scale(1.04);
+  box-shadow:0 6px 18px rgba(220,245,40,0.4), 2.5px 2.5px 0 #181914;
+}
+.bridge-arrow-icon{
+  width:14px;
+  height:14px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  font-size:13px;
+}
+.bridge-tag{
+  font-size:10px;
+  font-family:var(--font-mono);
+  background:#f0f2e6;
+  border:1px solid #181914;
+  padding:1px 6px;
+  border-radius:10px;
+}
+
+/* Second Row (Only visible in With Skill mode) */
+.pipeline-row-bottom{
+  max-height:0;
+  opacity:0;
+  overflow:hidden;
+  transition:max-height .5s cubic-bezier(0.16,1,0.3,1), opacity .4s ease, transform .4s ease;
+  transform:translateY(-8px);
+}
+.skill-flow-frame.mode-withskill .pipeline-row-bottom{
+  max-height:420px;
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* Connecting Arrows */
+.pipe-arrow{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#b6baa7;
+  transition:all .22s ease;
+  position:relative;
+}
+.pipe-arrow svg{
+  width:clamp(20px,2.4vw,28px);
+  height:clamp(20px,2.4vw,28px);
+  display:block;
+  overflow:visible;
+}
+.pipe-arrow.active{
+  color:#181914;
+  transform:scale(1.2);
+}
+.pipe-arrow.active svg path,
+.pipe-arrow.active svg line,
+.pipe-arrow.active svg polyline{
+  stroke:#181914;
+  stroke-width:2.6;
+}
+
+/* Graphic Step Card */
+.graphic-step-card{
+  background:#ffffff;
+  border:1.5px solid #d5d8c8;
+  border-radius:14px;
+  padding:16px 14px 14px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  transition:all .28s cubic-bezier(0.34,1.4,0.64,1);
+  box-shadow:0 3px 10px rgba(0,0,0,0.03), 1.5px 1.5px 0 rgba(0,0,0,0.04);
+  position:relative;
+  min-height:190px;
+  justify-content:space-between;
+}
+.step-num-badge{
+  font-family:var(--font-mono);
+  font-size:10.5px;
+  font-weight:700;
+  background:#f2f4ea;
+  border:1px solid #181914;
+  padding:2px 8px;
+  border-radius:10px;
+  color:#24261e;
+  box-shadow:1px 1px 0 #181914;
+  display:inline-flex;
+  align-items:center;
+  gap:4px;
+}
+.graphic-step-card.active .step-num-badge{background:var(--lime)}
+
+/* Active Glow States */
+.graphic-step-card.active{
+  border-color:#181914!important;
+  transform:translateY(-5px);
+  box-shadow:0 12px 28px rgba(0,0,0,0.1), 3px 3px 0 #181914!important;
+  background:#ffffff!important;
+}
+.graphic-step-card.active-skill{
+  border-color:#181914!important;
+  background:#f9ffe2!important;
+  transform:translateY(-6px);
+  box-shadow:0 14px 32px rgba(220,245,40,0.42), 3px 3px 0 #181914!important;
+}
+.graphic-step-card.active-output{
+  border-color:#165b2e!important;
+  background:#effcf3!important;
+  transform:translateY(-5px);
+  box-shadow:0 14px 30px rgba(22,91,46,0.22), 3px 3px 0 #165b2e!important;
+}
+.graphic-step-card.done{
+  border-color:#181914;
+  box-shadow:2px 2px 0 #181914;
+}
+
+/* Graphic Visual Canvas */
+.graphic-canvas{
+  width:100%;
+  height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:4px 0 8px;
+  position:relative;
+}
+.svg-motion{
+  width:82px;
+  height:62px;
+  overflow:visible;
+  filter:drop-shadow(0 2px 4px rgba(0,0,0,0.04));
+}
+
+/* Card Typography */
+.card-meta{display:flex;flex-direction:column;align-items:center;gap:3px;width:100%}
+.card-title{font-size:16px;font-weight:700;color:#181914;line-height:1.25}
+.card-sub{font-size:12px;color:#616453;line-height:1.3;text-wrap:balance}
+
+/* Step 3 Morph between No Skill & With Skill */
+.mode-withskill .view-noskill-card{display:none!important}
+.mode-noskill .view-withskill-card{display:none!important}
+
+/* SVG KEYFRAME ANIMATIONS */
+/* 1. Typing Bouncing Dots */
+.type-dot{animation:typeBounce 1.4s infinite ease-in-out}
+.dot-1{animation-delay:0s}
+.dot-2{animation-delay:0.2s}
+.dot-3{animation-delay:0.4s}
+@keyframes typeBounce{0%,80%,100%{transform:translateY(0);opacity:.3}40%{transform:translateY(-6px);opacity:1}}
+.signal-wave{animation:pulseWave 1.6s infinite ease-out}
+.wave-2{animation-delay:0.35s}
+@keyframes pulseWave{0%{opacity:0;transform:scale(0.85)}50%{opacity:1}100%{opacity:0;transform:scale(1.2)}}
+
+/* 2. Neural Orbit & Core */
+.orbit-ring{animation:orbitSpin 7s linear infinite;transform-origin:35px 27px}
+.orbit-ring-inner{animation:orbitCounterSpin 5s linear infinite;transform-origin:35px 27px}
+.orbit-nodes{animation:orbitSpin 7s linear infinite;transform-origin:35px 27px}
+@keyframes orbitSpin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes orbitCounterSpin{from{transform:rotate(0deg)}to{transform:rotate(-360deg)}}
+.brain-core-pulse{animation:coreBreathe 2s ease-in-out infinite alternate;transform-origin:35px 27px}
+@keyframes coreBreathe{0%{transform:scale(0.92);fill:#e5e2ff}100%{transform:scale(1.1);fill:#b2a8ed}}
+
+/* 3. Laser Scanner on SKILL.md */
+.scan-laser{animation:laserScan 2.2s ease-in-out infinite alternate}
+.scan-spark{animation:laserScan 2.2s ease-in-out infinite alternate}
+@keyframes laserScan{0%{transform:translateY(0)}100%{transform:translateY(22px)}}
+
+/* 4. Planning Blueprint & Filament Glow */
+.plan-gear{animation:gearSpin 6s linear infinite;transform-origin:35px 24px}
+@keyframes gearSpin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.bulb-glow{animation:bulbBreathe 2.2s ease-in-out infinite alternate;transform-origin:35px 22px}
+@keyframes bulbBreathe{0%{fill:#f5eed0}100%{fill:#ffe366;filter:drop-shadow(0 0 4px #ffe366)}}
+
+/* 5. Execution Meshing Cogs & Progress */
+.gear-large{animation:gearSpin 5s linear infinite;transform-origin:28px 27px}
+.gear-small{animation:gearCounterSpin 3.3s linear infinite;transform-origin:46px 22px}
+.exec-progress-bar{animation:barFill 2.4s ease-in-out infinite}
+@keyframes barFill{0%{width:6px;fill:#9b9e8f}50%{width:26px;fill:#165b2e}100%{width:34px;fill:#28ca42}}
+
+/* 6. Output Radar Ring & Target Pop */
+.output-ring{animation:ringPop 2.2s ease-in-out infinite}
+@keyframes ringPop{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.1);opacity:.85}}
+.output-check{animation:checkBounce 2.2s ease-in-out infinite}
+@keyframes checkBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px) scale(1.06)}}
+
+/* Responsive Scaling for Tablets and Mobile Devices */
+@media(max-width:820px){
+  .flow-frame-topbar{padding:12px 16px}
+  .flow-frame-body{padding:18px 16px 20px}
+  .pipeline-row{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+  .pipe-arrow{
+    height:22px;
+    width:100%;
+    transform:rotate(90deg);
+  }
+  .pipe-arrow.active{transform:rotate(90deg) scale(1.2)}
+  .graphic-step-card{
+    display:grid!important;
+    grid-template-columns:88px 1fr;
+    grid-template-rows:auto auto;
+    grid-template-areas:
+      "canvas badge"
+      "canvas meta";
+    align-items:center;
+    text-align:left;
+    padding:14px 18px;
+    min-height:auto;
+    gap:4px 16px;
+  }
+  .graphic-canvas{
+    grid-area:canvas;
+    height:68px;
+    width:88px;
+    margin:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .svg-motion{width:76px;height:56px}
+  .step-num-badge{
+    grid-area:badge;
+    justify-self:start;
+    margin:0 0 2px 0;
+  }
+  .card-meta{
+    grid-area:meta;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    text-align:left;
+    gap:3px;
+    width:100%;
+  }
+  .card-title{font-size:15.5px;line-height:1.3}
+  .card-sub{font-size:12.5px;line-height:1.4}
+  .pipeline-bridge{margin:8px 0}
+  .skill-flow-frame.mode-withskill .pipeline-row-bottom{max-height:950px}
+  .flow-mode-banner{
+    grid-template-columns:auto 1fr;
+    grid-template-rows:auto auto;
+    grid-template-areas:
+      "tag count"
+      "text text";
+    align-items:center;
+    gap:8px 10px;
+    padding:12px 16px;
+    margin-bottom:18px;
+  }
+  .banner-tag{
+    grid-area:tag;
+    justify-self:start;
+  }
+  .banner-count-badge{
+    grid-area:count;
+    justify-self:end;
+  }
+  .banner-text-wrap{
+    grid-area:text;
+    width:100%;
+    font-size:13px;
+    line-height:1.45;
+  }
+}
+@media(max-width:480px){
+  .graphic-step-card{
+    grid-template-columns:72px 1fr;
+    gap:4px 12px;
+    padding:12px 14px;
+  }
+  .graphic-canvas{width:72px;height:56px}
+  .svg-motion{width:64px;height:48px}
+  .card-title{font-size:14px}
+  .card-sub{font-size:11.5px}
+  .flow-pill-btn{padding:5px 12px;font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){.skill-flow-frame *{animation:none!important;transition:none!important}}
+</style><style id="claude-mascot">
+/* DAT Panda Mascot Animation Styles */
+.claude-runner-container{position:fixed;inset:0;width:100vw;height:100vh;pointer-events:none;z-index:999;overflow:visible}
+.claude-character{position:absolute;top:auto;bottom:18px;left:28px;width:68px;height:68px;pointer-events:auto;cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent}
+/* Crying Animation Styles */
+.claude-character.crying .claude-torso{animation:pandaCryTremble .1s ease-in-out infinite alternate!important}
+@keyframes pandaCryTremble{0%{transform:translateY(-1px) rotate(-3deg)}100%{transform:translateY(2px) rotate(3deg)}}
+.claude-character.crying .regular-eyes,.claude-character.crying .regular-mouth{opacity:0!important;visibility:hidden!important}
+.claude-character:not(.crying) .crying-eyes,.claude-character:not(.crying) .crying-waterfall,.claude-character:not(.crying) .crying-mouth{opacity:0!important;visibility:hidden!important}
+.claude-character.crying .crying-eyes,.claude-character.crying .crying-waterfall,.claude-character.crying .crying-mouth{opacity:1!important;visibility:visible!important}
+@keyframes tearStreamFlow{0%{transform:scaleY(0.65) translateY(-4px);opacity:.7}50%{transform:scaleY(1.18) translateY(2px);opacity:1}100%{transform:scaleY(0.88) translateY(4px);opacity:.85}}
+.claude-character.crying .crying-waterfall{animation:tearStreamFlow .28s ease-in-out infinite alternate;transform-origin:50px 38px}
+.claude-tear{position:absolute;pointer-events:none;font-size:17px;animation:pandaTearSplash .95s ease-out forwards;z-index:1001}
+@keyframes pandaTearSplash{0%{transform:translate(0,0) scale(0.3);opacity:1}45%{transform:translate(var(--tx),calc(var(--ty) - 18px)) scale(1.25);opacity:.95}100%{transform:translate(calc(var(--tx) * 1.35),calc(var(--ty) + 45px)) scale(0.85) rotate(var(--rot));opacity:0}}
+.claude-visual{width:100%;height:100%;position:relative;transform-origin:50% 80%;transition:transform 0.2s cubic-bezier(0.34,1.56,0.64,1)}
+.claude-svg{width:100%;height:100%;display:block;overflow:visible;filter:drop-shadow(0 6px 14px rgba(20,20,20,0.25))}
+.claude-character:hover .claude-svg{filter:drop-shadow(0 8px 20px rgba(220,38,38,0.42))}
+/* Running & Wobble */
+.claude-character.walking .claude-torso{animation:claudeTorsoWalk .32s ease-in-out infinite alternate;transform-origin:50px 80px}
+.claude-character.walking .left-foot{animation:claudeFootL .32s ease-in-out infinite alternate;transform-origin:38px 88px}
+.claude-character.walking .right-foot{animation:claudeFootR .32s ease-in-out infinite alternate;transform-origin:62px 88px}
+.claude-character.walking .left-hand{animation:claudeHandL .32s ease-in-out infinite alternate;transform-origin:16px 58px}
+.claude-character.walking .right-hand{animation:claudeHandR .32s ease-in-out infinite alternate;transform-origin:84px 58px}
+.claude-character.walking .claude-shadow{animation:claudeShadowWalk .32s ease-in-out infinite alternate;transform-origin:50px 94px}
+/* Idle */
+.claude-character.idle .claude-torso{animation:claudeBreathe 2.4s ease-in-out infinite;transform-origin:50px 85px}
+.claude-character.idle .claude-shadow{animation:claudeShadowBreathe 2.4s ease-in-out infinite;transform-origin:50px 94px}
+/* Small Hop */
+.claude-character.jumping .claude-visual{animation:claudeHop .65s cubic-bezier(0.25,1,0.5,1)}
+/* Click Super Jump */
+.claude-character.super-jump .claude-visual{animation:claudeSuperJump .85s cubic-bezier(0.2,0.9,0.3,1.2)}
+.claude-character.super-jump .claude-torso{animation:claudeSpin .85s ease}
+/* Blinking */
+.claude-eyes{animation:claudeBlink 3.8s infinite;transform-origin:50px 50px}
+@keyframes claudeBlink{0%,92%,100%{transform:scaleY(1)}95%,97%{transform:scaleY(0.12)}}
+@keyframes claudeTorsoWalk{0%{transform:translateY(-3px) rotate(-3deg)}100%{transform:translateY(1px) rotate(3deg)}}
+@keyframes claudeFootL{0%{transform:translateY(-8px) scaleY(1.15)}100%{transform:translateY(2px) scaleY(0.85)}}
+@keyframes claudeFootR{0%{transform:translateY(2px) scaleY(0.85)}100%{transform:translateY(-8px) scaleY(1.15)}}
+@keyframes claudeHandL{0%{transform:translateY(3px) rotate(14deg)}100%{transform:translateY(-3px) rotate(-14deg)}}
+@keyframes claudeHandR{0%{transform:translateY(-3px) rotate(-14deg)}100%{transform:translateY(3px) rotate(14deg)}}
+@keyframes claudeShadowWalk{0%{transform:scaleX(0.82);opacity:.5}100%{transform:scaleX(1.08);opacity:.85}}
+@keyframes claudeBreathe{0%,100%{transform:scale(1)}50%{transform:scale(1.03,0.97) translateY(-2px)}}
+@keyframes claudeShadowBreathe{0%,100%{transform:scaleX(1);opacity:.6}50%{transform:scaleX(.92);opacity:.45}}
+@keyframes claudeHop{0%{transform:translateY(0)}40%{transform:translateY(-38px) scale(0.95,1.08)}70%{transform:translateY(-4px)}100%{transform:translateY(0) scale(1)}}
+@keyframes claudeSuperJump{0%{transform:translateY(0) scale(1.15,0.85)}30%{transform:translateY(-68px) scale(0.9,1.15)}70%{transform:translateY(-4px) scale(1.08,0.92)}100%{transform:translateY(0) scale(1)}}
+@keyframes claudeSpin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+/* Particle Sparks */
+.claude-sparkle{position:absolute;pointer-events:none;font-size:15px;animation:claudeSparkleFly .75s ease-out forwards;z-index:1001}
+@keyframes claudeSparkleFly{0%{transform:translate(0,0) scale(0.3);opacity:1}100%{transform:translate(var(--tx),var(--ty)) scale(1.25) rotate(var(--rot));opacity:0}}
+/* Speech Bubble */
+.claude-bubble{position:absolute;bottom:74px;left:50%;transform:translateX(-50%) translateY(6px);background:#20211e;color:#fffef9;font-family:var(--font-body);font-size:13px;font-weight:500;padding:6px 14px;border-radius:20px;white-space:nowrap;pointer-events:none;opacity:0;transition:opacity .25s ease,transform .25s ease;box-shadow:0 6px 16px rgba(0,0,0,0.22);border:1px solid rgba(255,255,255,0.14);display:flex;align-items:center;gap:6px;z-index:1002}
+.claude-bubble::after{content:'';position:absolute;bottom:-5px;left:50%;transform:translateX(-50%);border-width:5px 5px 0;border-style:solid;border-color:#20211e transparent;width:0}
+.claude-bubble.show{opacity:1;transform:translateX(-50%) translateY(0)}
+/* Cute Name Badge */
+.claude-badge{position:absolute;bottom:-10px;left:50%;transform:translateX(-50%);background:var(--lime);color:#151515;font-size:10px;font-weight:600;padding:2px 7px;border-radius:10px;border:1px solid #151515;white-space:nowrap;box-shadow:1px 1px 0 #151515;pointer-events:none}
+@media(max-width:920px){.claude-runner-container{display:none!important}}
+@media(prefers-reduced-motion:reduce){.claude-character,.claude-visual,.claude-torso,.claude-foot,.claude-hand,.claude-shadow,.claude-eyes{animation:none!important;transition:none!important}}
+/* Folder & Subfolder Tree Explorer Styles */
+.tree{background:#f4f5ee!important;border:1px solid #c6c8b8!important;border-radius:10px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,0.05);font-family:var(--font-mono)!important;padding:0!important;display:flex!important;flex-direction:column!important;gap:0!important}
+.tree-header{background:#e3e5db;border-bottom:1px solid #c6c8b8;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.tree-dots{display:flex;gap:6px;align-items:center}
+.tree-dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+.dot-red{background:#ff5f57;border:1px solid #e0443e}
+.dot-yellow{background:#ffbd2e;border:1px solid #dea123}
+.dot-green{background:#28ca42;border:1px solid #1aab29}
+.tree-title{font-family:var(--font-mono);font-size:13px;color:#55574c}
+.tree-path b{color:var(--ink)}
+.tree-content{padding:22px 20px 24px;display:flex;flex-direction:column;gap:6px}
+.tree-node{position:relative;display:flex;flex-direction:column;gap:2px}
+.tree-row{display:flex;align-items:center;gap:8px;padding:6px 8px;border-radius:6px;transition:background .15s ease}
+.tree-row:hover{background:rgba(0,0,0,0.04)}
+.tree-icon{font-size:18px;line-height:1;flex-shrink:0}
+.tree-name{font-family:var(--font-mono);font-size:16px;font-weight:600;color:var(--ink)}
+.tree-name.file-name{font-weight:500}
+.tree-badge{font-family:var(--font-body);font-size:11px;font-weight:600;padding:2px 8px;border-radius:12px;margin-left:auto;flex-shrink:0}
+.badge-repo{background:#dedfd4;color:#4f5048}
+.badge-zip{background:var(--lime);color:#1f2115;border:1px solid #111;box-shadow:1px 1px 0 #111}
+.badge-req{background:var(--lavender);color:#1f1b40}
+.badge-sub{background:var(--blue);color:#133a45}
+.badge-opt{background:var(--green);color:#163e23}
+.tree-desc{font-family:var(--font-body);font-size:14px;line-height:1.5;color:#5c5e52;padding-left:32px;margin-bottom:6px}
+.tree-children{margin-left:14px;padding-left:14px;border-left:2px solid #d2d4c4;display:flex;flex-direction:column;gap:6px;margin-top:4px}
+.tree-node.highlight-skill>.tree-row{background:rgba(237,250,145,0.45);border:1px dashed #9baa3c}
+@media(max-width:760px){.tree-content{padding:16px 12px}.tree-children{margin-left:8px;padding-left:10px}.tree-name{font-size:14px}.tree-desc{font-size:13px;padding-left:24px}.tree-badge{font-size:10px;padding:1px 6px}}
+/* Prompt Copy Box Styles */
+.prompt-box{background:#fff;border:1px solid #c6c8b8;border-radius:10px;overflow:hidden;margin:22px 0 24px;box-shadow:0 4px 16px rgba(0,0,0,0.04);transition:border-color .2s ease,box-shadow .2s ease}
+.prompt-box:hover{border-color:#a8aba0;box-shadow:0 6px 20px rgba(0,0,0,0.07)}
+.prompt-box-header{background:#f0f1e9;border-bottom:1px solid #c6c8b8;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.prompt-box-title{font-size:13px;font-weight:600;color:#55574c;display:flex;align-items:center;gap:8px}
+.prompt-box-icon{font-size:15px;line-height:1}
+.copy-btn{background:#fff;border:1px solid #111;border-radius:20px;padding:5px 14px;font-size:13px;font-weight:600;color:var(--ink);display:inline-flex;align-items:center;gap:6px;cursor:pointer;transition:all .18s ease;box-shadow:1px 1px 0 #111}
+.copy-btn:hover{background:var(--lime);transform:translateY(-1px);box-shadow:2px 2px 0 #111}
+.copy-btn:active{transform:translateY(0);box-shadow:0 0 0 #111}
+.copy-btn.copied{background:var(--green);border-color:#165b2e;color:#0f3f20;box-shadow:1px 1px 0 #165b2e}
+.prompt-box-body{padding:18px 20px;font-family:var(--font-body);font-size:16px;line-height:1.65;color:#242520}
+.prompt-command{font-weight:600;color:#151515;font-size:16.5px;margin:0 0 12px;padding-bottom:10px;border-bottom:1px dashed #dcded2;display:flex;align-items:center;gap:6px}
+.prompt-command::before{content:'›';font-size:22px;line-height:1;color:#8780d4;font-weight:700}
+.prompt-text{margin:0!important;color:#3f4137!important;font-size:15.5px!important;line-height:1.7!important;max-width:none!important}
+.demo-actions{display:flex;align-items:center;gap:16px;margin-top:20px}
+@media(max-width:760px){.prompt-box{margin:18px 0 20px}.prompt-box-body{padding:15px 14px}.prompt-command{font-size:15px}.prompt-text{font-size:14.5px!important}}
+
+/* Download Card Styles */
+.download-card{background:#fff;border:1px solid #c6c8b8;border-radius:10px;padding:20px;margin:22px 0 24px;box-shadow:0 4px 16px rgba(0,0,0,0.04);display:flex;flex-direction:column;gap:16px;transition:border-color .2s ease,box-shadow .2s ease}
+.download-card:hover{border-color:#a8aba0;box-shadow:0 6px 20px rgba(0,0,0,0.07)}
+.download-card-body{display:flex;align-items:flex-start;gap:16px}
+.download-card-icon{width:46px;height:46px;border-radius:10px;background:#eef1e1;color:#35382c;display:flex;align-items:center;justify-content:center;flex-shrink:0;border:1px solid #cdd0bf}
+.download-card-info{display:flex;flex-direction:column;gap:5px;flex-grow:1}
+.download-file-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.download-file-name{font-family:var(--font-mono);font-size:17px;font-weight:600;color:var(--ink)}
+.download-file-size{font-size:12px;font-weight:600;padding:2px 8px;border-radius:12px;background:var(--lime);color:#1f2115;border:1px solid #111;box-shadow:1px 1px 0 #111}
+.download-card-desc{margin:0!important;font-size:14.5px!important;line-height:1.55!important;color:#5c5e52!important;max-width:none!important}
+.download-card-action{display:flex;align-items:center;gap:14px;padding-top:14px;border-top:1px dashed #dcded2;flex-wrap:wrap}
+.download-btn{background:var(--lime);border:1px solid #111;border-radius:40px;padding:11px 24px;font-size:15px;font-weight:600;color:var(--ink);display:inline-flex;align-items:center;gap:8px;cursor:pointer;transition:all .18s ease;box-shadow:2px 2px 0 #111;text-decoration:none}
+.download-btn:hover{background:#e3f573;transform:translateY(-1px);box-shadow:3px 3px 0 #111}
+.download-btn:active{transform:translateY(0);box-shadow:1px 1px 0 #111}
+@media(max-width:760px){.download-card{padding:16px}.download-card-body{gap:12px}.download-card-icon{width:40px;height:40px}.download-btn{width:100%;justify-content:center}}
+
+/* Interactive Checklist Cards & Mini Code Previews */
+.interactive-checks-container{display:flex;flex-direction:column;gap:18px}
+.check-card{
+  background:#ffffff;
+  border:1.5px solid #20211e;
+  border-radius:12px;
+  box-shadow:3px 3px 0 #20211e;
+  overflow:hidden;
+  transition:all .22s cubic-bezier(0.16,1,0.3,1);
+  cursor:pointer;
+  outline:none;
+}
+.check-card:hover{
+  transform:translateY(-2px);
+  box-shadow:4px 5px 0 #20211e;
+}
+.check-card:focus-visible{
+  outline:3px solid #8780d4;
+  outline-offset:3px;
+}
+.check-card.active{
+  border-color:#181914;
+  box-shadow:4px 4px 0 #181914;
+}
+.check-card-header{
+  padding:16px 18px;
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:14px;
+  background:#fafbf7;
+  border-bottom:1px solid #e7e8de;
+  transition:background .2s ease;
+}
+.check-card:hover .check-card-header,
+.check-card.active .check-card-header{
+  background:#f4f6ec;
+}
+.check-header-left{
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+}
+.check-icon-circle{
+  width:18px;
+  height:18px;
+  border-radius:50%;
+  flex-shrink:0;
+  margin-top:5px;
+  border:1.5px solid #181914;
+  box-shadow:1px 1px 0 #181914;
+}
+.icon-task{background:var(--lavender)}
+.icon-way{background:var(--blue)}
+.icon-tools{background:var(--green)}
+.check-title{
+  margin:0 0 4px;
+  font-family:Georgia,serif;
+  font-size:22px;
+  font-weight:700;
+  color:#1b1c19;
+  line-height:1.2;
+}
+.check-question{
+  margin:0;
+  font-size:15px;
+  line-height:1.5;
+  color:#4f5144;
+}
+.check-header-badges{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  flex-shrink:0;
+}
+.check-file-badge{
+  font-family:var(--font-mono);
+  font-size:11.5px;
+  font-weight:600;
+  padding:3px 9px;
+  border-radius:12px;
+  border:1px solid #181914;
+  white-space:nowrap;
+}
+.badge-skillmd{background:#eeecff;color:#28235c}
+.badge-rules{background:#e2f4f9;color:#0e3c48}
+.badge-tools{background:#e1f7e8;color:#0f4621}
+.check-toggle-indicator{
+  font-size:16px;
+  font-weight:700;
+  color:#525447;
+  transition:transform .25s ease;
+}
+.check-card.active .check-toggle-indicator{
+  transform:rotate(180deg);
+}
+.check-card-detail{
+  padding:16px 18px 18px;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  background:#ffffff;
+}
+/* Light Theme for Mini Code Window (Sleek macOS Light Window) */
+.mini-code-window{
+  background:#ffffff;
+  border:1.5px solid #181914;
+  border-radius:9px;
+  overflow:hidden;
+  box-shadow:2.5px 2.5px 0 #181914;
+  max-width:100%;
+  min-width:0;
+}
+.code-window-topbar{
+  background:#f1f3ea;
+  padding:8px 12px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  border-bottom:1px solid #d8dcd0;
+  flex-wrap:wrap;
+  min-width:0;
+}
+.window-dots{
+  display:flex;
+  gap:5px;
+  align-items:center;
+  flex-shrink:0;
+}
+.wdot{width:9px;height:9px;border-radius:50%;display:inline-block}
+.wdot.dot-r{background:#ff5f57;border:1px solid #e0443e}
+.wdot.dot-y{background:#ffbd2e;border:1px solid #dea123}
+.wdot.dot-g{background:#28ca42;border:1px solid #1aab29}
+.code-file-path{
+  font-family:var(--font-mono);
+  font-size:11.5px;
+  color:#52554a;
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  flex-wrap:wrap;
+  min-width:0;
+}
+.code-file-path b{color:#181914;font-weight:700}
+.path-tag{
+  background:#ffffff;
+  color:#2c2e25;
+  border:1px solid #c4c7b8;
+  padding:1px 7px;
+  border-radius:4px;
+  font-size:10px;
+  font-weight:600;
+  letter-spacing:0.02em;
+}
+.code-content{
+  background:#ffffff;
+  padding:12px 14px;
+  overflow-x:auto;
+  -webkit-overflow-scrolling:touch;
+  max-width:100%;
+  min-width:0;
+}
+.code-content pre{
+  margin:0;
+  font-family:var(--font-mono);
+  font-size:12.5px;
+  line-height:1.65;
+  color:#21231b;
+  white-space:pre-wrap;
+  word-break:break-word;
+  overflow-wrap:break-word;
+}
+.code-dim{color:#8c9082}
+.code-key{color:#0969da;font-weight:700}
+.code-str{color:#1a7f37}
+.code-heading{color:#0969da;font-weight:700}
+.code-rule-warn{
+  color:#cf222e;
+  font-weight:700;
+  background:#ffebe9;
+  padding:1px 5px;
+  border-radius:3px;
+  border:1px solid #ffc1bc;
+}
+.code-file-pass{color:#1a7f37;font-weight:600}
+.code-file-alert{color:#cf222e;font-weight:700}
+.code-comment{color:#6e7781;font-style:italic}
+.code-alert-txt{color:#cf222e;font-weight:600}
+.code-hl-bg{
+  background:#f0f4ff;
+  border-left:3.5px solid #4f46e5;
+  padding:3px 0 3px 8px;
+  margin:3px 0;
+  display:block;
+  border-radius:0 4px 4px 0;
+  color:#181914;
+}
+.code-hl-warn{
+  background:#fff1f0;
+  border-left:3.5px solid #cf222e;
+  padding:3px 0 3px 8px;
+  margin:3px 0;
+  display:block;
+  border-radius:0 4px 4px 0;
+  color:#181914;
+}
+.code-window-footer{
+  background:#f7f9f2;
+  padding:9px 13px;
+  font-size:12.5px;
+  color:#4a4c42;
+  border-top:1px solid #e1e4d8;
+  display:flex;
+  align-items:flex-start;
+  gap:6px;
+  line-height:1.5;
+  word-break:break-word;
+}
+.scan-pointer{color:#202219;font-size:12.5px;line-height:1.5}
+.mono-tag{
+  background:#ffffff;
+  color:#181914;
+  border:1px solid #c4c7b8;
+  padding:1px 6px;
+  border-radius:4px;
+  font-family:var(--font-mono);
+  font-size:11px;
+  font-weight:600;
+}
+.criteria-row{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.crit-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:12.5px;
+  padding:5px 12px;
+  border-radius:20px;
+  line-height:1.4;
+  border:1px solid transparent;
+}
+.crit-dot{
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  display:inline-block;
+  flex-shrink:0;
+}
+.dot-pass{
+  background:#16a34a;
+  box-shadow:0 0 0 2px rgba(22,163,74,0.25);
+}
+.dot-skip{
+  background:#dc2626;
+  box-shadow:0 0 0 2px rgba(220,38,38,0.25);
+}
+.dot-warn{
+  background:#d97706;
+  box-shadow:0 0 0 2px rgba(217,119,6,0.25);
+}
+.crit-pass{
+  background:#eefbf2;
+  border-color:#b9eecd;
+  color:#14532d;
+}
+.crit-skip{
+  background:#fef2f2;
+  border-color:#fecaca;
+  color:#991b1b;
+}
+.crit-warn{
+  background:#fffbeb;
+  border-color:#fde68a;
+  color:#92400e;
+}
+.license-alert-card{
+  background:#fffdf5;
+  border:1.5px solid #d97706;
+  border-radius:10px;
+  padding:16px 18px;
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+  box-shadow:2.5px 2.5px 0 #d97706;
+  margin-top:6px;
+}
+.license-alert-icon{
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  background:#fef3c7;
+  color:#b45309;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+  border:1px solid #f59e0b;
+}
+.license-alert-text{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  flex-grow:1;
+}
+.alert-headline{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.alert-headline strong{
+  font-size:15px;
+  font-weight:700;
+  color:#78350f;
+}
+.alert-safety-pill{
+  font-size:11px;
+  font-weight:700;
+  padding:1px 8px;
+  border-radius:10px;
+  background:#b45309;
+  color:#ffffff;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
+.license-alert-text p{
+  margin:0!important;
+  font-size:13.5px!important;
+  line-height:1.55!important;
+  color:#663710!important;
+}
+.tree-node.active-inspect>.tree-row{
+  background:rgba(237,250,145,0.95)!important;
+  border:1.5px solid #181914!important;
+  box-shadow:0 0 14px rgba(237,250,145,0.9)!important;
+  animation:treePulseGlow 1.2s infinite alternate;
+}
+@keyframes treePulseGlow{
+  0%{transform:scale(1);box-shadow:0 0 6px rgba(237,250,145,0.5)}
+  100%{transform:scale(1.02);box-shadow:0 0 16px rgba(186,230,34,0.95)}
+}
+/* ============================================================
+   RESPONSIVE ADAPTABILITY & MULTI-DEVICE SUPPORT
+   (Desktop 1200px+ · Laptop 1024px · Tablet 768px-900px · Mobile 320px-480px)
+   ============================================================ */
+
+/* Global Fluid Reset for All Devices */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Touch Target Polish */
+button, .pill, .demo-link, .download-btn, .lang-btn, .flow-pill-btn {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 1. Large Tablets & Medium Laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .hero-bottom {
+    gap: 6%;
+  }
+  .cols {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .demo-slide .slide-inner {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .demo-slide h2 {
+    max-width: 100%;
+  }
+  .demo-slide p {
+    max-width: 100%;
+  }
+  .layers {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+  }
+}
+
+/* 2. Tablets & Mobile Navigation (max-width: 900px) */
+@media (max-width: 900px) {
+  .site-header {
+    padding: 16px 5%;
+  }
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #eaece1;
+    border: 1.5px solid #181914;
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 700;
+    color: #181914;
+    box-shadow: 1.5px 1.5px 0 #181914;
+    cursor: pointer;
+    line-height: 1;
+    transition: all .18s ease;
+  }
+  .menu-toggle:hover {
+    background: var(--lime);
+  }
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    border-bottom: 2px solid #181914;
+    box-shadow: 0 16px 32px rgba(0,0,0,0.12);
+    padding: 22px 6%;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 1000;
+  }
+  .site-nav.open {
+    display: flex;
+    animation: navSlideDown .2s cubic-bezier(0.16,1,0.3,1);
+  }
+  @keyframes navSlideDown {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .site-nav a {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0e8;
+  }
+
+  /* Section 01: Simulator Pipeline Responsive */
+  .pipeline-row {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .pipe-arrow {
+    height: 22px;
+    width: 100%;
+    transform: rotate(90deg);
+  }
+  .pipe-arrow.active {
+    transform: rotate(90deg) scale(1.2);
+  }
+  .graphic-step-card {
+    display: grid !important;
+    grid-template-columns: 88px 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "canvas badge"
+      "canvas meta";
+    align-items: center;
+    text-align: left;
+    padding: 14px 18px;
+    min-height: auto;
+    gap: 4px 16px;
+  }
+  .graphic-canvas {
+    grid-area: canvas;
+    height: 68px;
+    width: 88px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .svg-motion {
+    width: 76px;
+    height: 56px;
+  }
+  .step-num-badge {
+    grid-area: badge;
+    justify-self: start;
+    margin: 0 0 2px 0;
+  }
+  .card-meta {
+    grid-area: meta;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 3px;
+    width: 100%;
+  }
+  .card-title {
+    font-size: 15.5px;
+    line-height: 1.3;
+  }
+  .card-sub {
+    font-size: 12.5px;
+    line-height: 1.4;
+  }
+  .pipeline-bridge {
+    margin: 8px 0;
+  }
+  .skill-flow-frame.mode-withskill .pipeline-row-bottom {
+    max-height: 950px;
+  }
+  .flow-mode-banner {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "tag count"
+      "text text";
+    align-items: center;
+    gap: 8px 10px;
+    padding: 12px 16px;
+    margin-bottom: 18px;
+  }
+  .banner-tag {
+    grid-area: tag;
+    justify-self: start;
+  }
+  .banner-count-badge {
+    grid-area: count;
+    justify-self: end;
+  }
+  .banner-text-wrap {
+    grid-area: text;
+    width: 100%;
+    font-size: 13px;
+    line-height: 1.45;
+  }
+}
+
+/* 3. Phablets & Small Tablets (max-width: 680px) */
+@media (max-width: 680px) {
+  .hero-bottom {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .topics {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .chapter {
+    padding: 48px 5%;
+  }
+
+  /* Simulator Topbar Mobile Alignment */
+  .flow-frame-topbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    padding: 12px 14px;
+  }
+  .frame-window-controls {
+    display: none;
+  }
+  .flow-pill-selector {
+    width: 100%;
+    display: flex;
+  }
+  .flow-pill-btn {
+    flex: 1;
+    justify-content: center;
+    padding: 7px 10px;
+    font-size: 12.5px;
+  }
+
+  /* Takeaways Card into Responsive Stacked Cards */
+  .takeaways-card {
+    padding: 20px 18px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0 #111;
+  }
+  .takeaways-table, .takeaways-table tbody, .takeaways-table tr, .takeaways-table td {
+    display: block;
+    width: 100%!important;
+  }
+  .takeaways-table thead {
+    display: none;
+  }
+  .takeaways-table tr {
+    padding: 16px 0;
+    border-bottom: 1.5px solid #e5e7dc;
+  }
+  .takeaways-table tr:first-child {
+    padding-top: 6px;
+  }
+  .takeaways-table tr:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .takeaways-table td {
+    padding: 3px 0!important;
+    border: 0!important;
+  }
+  .takeaways-table .col-num {
+    margin-bottom: 6px;
+  }
+  .takeaways-table .col-en {
+    font-size: 16px;
+    margin-bottom: 4px;
+    padding-right: 0;
+    min-width: 0;
+  }
+  .takeaways-table .col-th {
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: #4f5048;
+  }
+
+  /* Layers Single Column */
+  .layers {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .layer {
+    padding: 22px 20px;
+  }
+
+  /* Inspection Checklist Cards */
+  .check-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 14px 16px;
+  }
+  .check-header-badges {
+    align-self: flex-start;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .check-title {
+    font-size: 18px;
+  }
+  .check-question {
+    font-size: 13.5px;
+  }
+  .check-card-detail {
+    padding: 10px 12px 14px;
+    box-sizing: border-box;
+  }
+  .code-window-topbar {
+    padding: 6px 10px;
+    gap: 6px;
+  }
+  .code-file-path {
+    font-size: 10.5px;
+    gap: 4px;
+  }
+  .path-tag {
+    font-size: 9px;
+    padding: 1px 5px;
+  }
+  .code-content {
+    padding: 10px 10px;
+  }
+  .code-content pre {
+    font-size: 11.5px;
+    line-height: 1.6;
+  }
+  .code-window-footer {
+    padding: 7px 10px;
+    font-size: 11px;
+  }
+  .scan-pointer {
+    font-size: 11px;
+  }
+  .criteria-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .crit-pill {
+    width: 100%;
+    box-sizing: border-box;
+    align-items: flex-start;
+    font-size: 12px;
+    padding: 7px 12px;
+  }
+  .crit-dot {
+    margin-top: 4px;
+  }
+  .license-alert-card {
+    padding: 14px 16px;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+/* 4. Small Mobile Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .site-header {
+    padding: 14px 4.5%;
+  }
+  .brand {
+    font-size: 20px;
+    letter-spacing: -0.8px;
+  }
+  .lang-btn {
+    padding: 3px 8px;
+    font-size: 11px;
+  }
+  .menu-toggle {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  .hero {
+    padding: 32px 4.5% 42px;
+  }
+  .hero h1 {
+    font-size: clamp(30px, 8.5vw, 46px);
+    margin: 18px 0 24px;
+  }
+  .hero-concepts {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .concept {
+    padding: 16px 18px;
+  }
+  .chapter {
+    padding: 36px 4.5%;
+  }
+  .chapter h2 {
+    font-size: clamp(26px, 7vw, 36px);
+  }
+
+  /* Compact Step Cards on Mobile */
+  .graphic-step-card {
+    grid-template-columns: 68px 1fr;
+    gap: 4px 12px;
+    padding: 12px 14px;
+  }
+  .graphic-canvas {
+    width: 64px;
+    height: 52px;
+  }
+  .svg-motion {
+    width: 58px;
+    height: 44px;
+  }
+  .card-title {
+    font-size: 13.5px;
+  }
+  .card-sub {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+  /* Tree View Card */
+  .tree-content {
+    padding: 14px 10px;
+  }
+  .tree-row {
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 5px 6px;
+  }
+  .tree-name {
+    font-size: 13.5px;
+  }
+  .tree-badge {
+    font-size: 9.5px;
+    padding: 1px 6px;
+    margin-left: 0;
+  }
+  .tree-desc {
+    font-size: 12.5px;
+    padding-left: 18px;
+  }
+
+  /* Code Windows Scroll smoothly on touch */
+  .code-content {
+    padding: 10px 12px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .code-content pre {
+    font-size: 11.5px;
+  }
+  .code-file-path {
+    font-size: 10.5px;
+  }
+  .scan-pointer {
+    font-size: 11.5px;
+  }
+
+  /* Pill Buttons & Download */
+  .pill, .demo-link {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    text-align: center;
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+  .download-card {
+    padding: 14px;
+  }
+  .download-card-body {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .download-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+  .prompt-box-body {
+    padding: 14px 12px;
+  }
+  .prompt-command {
+    font-size: 14.5px;
+  }
+  .prompt-text {
+    font-size: 13.5px!important;
+    line-height: 1.6;
+  }
+  .site-footer {
+    padding: 28px 4.5%;
+    gap: 20px;
+  }
+}
+
+/* ============================================================
+   PICTURE 2: MACOS WINDOW CHAT (WHITE DISPLAY + GRAY INPUT BAR)
+   ============================================================ */
+.mac-window-chat {
+  background: #eceee7;
+  border: 1.5px solid #181914;
+  border-radius: 12px;
+  max-width: 540px;
+  width: 100%;
+  margin: 22px auto 14px;
+  box-shadow: 4px 4px 0 #181914;
+  font-family: var(--font-body);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all .2s ease;
+}
+.mac-win-header {
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.mac-win-dots {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.mac-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.mac-dot.dot-red { background: #ff5f57; border: 1px solid #e0443e; }
+.mac-dot.dot-yellow { background: #ffbd2e; border: 1px solid #dea123; }
+.mac-dot.dot-green { background: #28ca42; border: 1px solid #1aab29; }
+
+.mac-win-address {
+  background: #ffffff;
+  border: 1px solid #c8cbbe;
+  border-radius: 5px;
+  padding: 3px 12px;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: #636659;
+  letter-spacing: 0.02em;
+}
+.mac-win-address b {
+  color: #181914;
+}
+
+/* White Message Display Area */
+.mac-messages-display {
+  background: #ffffff;
+  border: 1.5px solid #181914;
+  border-bottom: 0;
+  border-radius: 8px 8px 0 0;
+  margin: 0 14px;
+  padding: 16px 18px;
+  min-height: 250px;
+  max-height: 330px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  -webkit-overflow-scrolling: touch;
+}
+.mac-msg-row {
+  background: #f7f8f3;
+  border: 1px solid #e2e4d8;
+  border-radius: 8px;
+  padding: 9px 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  animation: macMsgIn .18s ease;
+}
+@keyframes macMsgIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.mac-msg-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+.mac-msg-author {
+  font-weight: 700;
+  color: #181914;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.mac-msg-time {
+  color: #7d8174;
+  font-size: 11px;
+}
+.mac-msg-text {
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: #21231b;
+  word-break: break-word;
+}
+
+/* Emoji Drawer */
+.mac-emoji-drawer {
+  background: #f1f3ea;
+  border: 1.5px solid #181914;
+  border-top: 1px dashed #c0c3b6;
+  border-bottom: 0;
+  margin: 0 14px;
+  padding: 8px 12px;
+  animation: macFadeIn .15s ease;
+}
+@keyframes macFadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.mac-emoji-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 4px;
+}
+.mac-emoji-item {
+  background: transparent;
+  border: 0;
+  font-size: 21px;
+  padding: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .12s ease;
+}
+.mac-emoji-item:hover {
+  background: #e2e5da;
+  transform: scale(1.22);
+}
+
+/* Gray Footer Input Area (Like Picture 2) */
+.mac-input-footer {
+  background: #d4d6cd;
+  border: 1.5px solid #181914;
+  border-radius: 0 0 8px 8px;
+  margin: 0 14px 14px;
+  padding: 10px 12px;
+}
+.mac-input-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  border: 1.5px solid #181914;
+  border-radius: 6px;
+  padding: 5px 8px 5px 12px;
+  box-shadow: 1.5px 1.5px 0 #181914;
+  transition: all .15s ease;
+}
+.mac-input-pill:focus-within {
+  box-shadow: 2px 2px 0 #181914, 0 0 0 2px rgba(237,250,145,0.7);
+}
+.mac-text-input {
+  flex: 1;
+  border: 0;
+  outline: none;
+  background: transparent;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: #181914;
+  min-width: 0;
+}
+.mac-text-input::placeholder {
+  color: #7d8174;
+}
+.mac-char-counter {
+  font-size: 11px;
+  color: #7d8174;
+  font-family: var(--font-mono);
+  white-space: nowrap;
+}
+.mac-emoji-btn {
+  background: transparent;
+  border: 0;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #55574c;
+  transition: all .15s ease;
+}
+.mac-emoji-btn:hover {
+  background: #eceee5;
+  color: #181914;
+}
+.mac-send-btn {
+  background: #007aff;
+  border: 1.5px solid #181914;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 1.5px 1.5px 0 #181914;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all .15s ease;
+  white-space: nowrap;
+}
+.mac-send-btn:hover {
+  background: #0066d6;
+  transform: translateY(-1px);
+  box-shadow: 2px 2px 0 #181914;
+}
+.mac-send-btn:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  .mac-window-chat {
+    border-radius: 10px;
+    margin: 16px 0;
+  }
+  .mac-messages-display {
+    margin: 0 10px;
+    padding: 12px 14px;
+    min-height: 210px;
+    max-height: 270px;
+  }
+  .mac-input-footer {
+    margin: 0 10px 10px;
+    padding: 8px 10px;
+  }
+  .mac-emoji-drawer {
+    margin: 0 10px;
+  }
+  .mac-emoji-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .mac-text-input {
+    font-size: 13.5px;
+  }
+}
+</style></head><body><div class="reading-progress" aria-hidden="true"></div><a class="skip" href="#s1">Skip to content</a><header class="site-header">
+  <a class="brand" href="#top" data-i18n="brand">Skills, Your Way</a>
+  <div class="header-right">
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="#s1" data-i18n="nav-idea">The idea</a>
+      <a href="#s2" data-i18n="nav-try">Try it</a>
+      <a href="#s3" data-i18n="nav-inside">Inside a Skill</a>
+      <a href="#s-close" data-i18n="nav-takeaways">Takeaways</a>
+    </nav>
+    <div class="lang-switcher" role="group" aria-label="Language selection / เลือกภาษา">
+      <button type="button" class="lang-btn active" id="btn-lang-th" data-lang="th" aria-pressed="true" title="ภาษาไทย">TH</button>
+      <button type="button" class="lang-btn" id="btn-lang-en" data-lang="en" aria-pressed="false" title="English">EN</button>
+    </div>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">Menu ☰</button>
+  </div>
+</header><section class="hero" id="top">
+  <div class="hero-top"><span class="hero-mark" aria-hidden="true">✳</span><span data-i18n="hero-badge">HITAP · AI SKILLS · SKILL.md</span></div>
+  <h1 data-i18n="hero-h1">Turn your know-how into skills <em>AI and your team can use.</em></h1>
+  <div class="hero-concepts">
+    <div class="concept">
+      <h3><svg class="concept-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg><span data-i18n="concept-1-title">CaptureKnowHow</span></h3>
+      <p data-i18n="concept-1-desc">Capture workflows, rules, and judgment to guide AI in your work context.</p>
+    </div>
+    <div class="concept">
+      <h3><svg class="concept-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 4h-7M10 4H3M21 12h-9M8 12H3M21 20h-5M12 20H3M14 2v4M8 10v4M16 18v4"/></svg><span data-i18n="concept-2-title">MakeItYours</span></h3>
+      <p data-i18n="concept-2-desc">Adapt instructions for research, administrative work, or software development.</p>
+    </div>
+    <div class="concept">
+      <h3><svg class="concept-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg><span data-i18n="concept-3-title">ShareAndImprove</span></h3>
+      <p data-i18n="concept-3-desc">Share working methods across the team and refine them through use.</p>
+    </div>
+  </div>
+  <div class="hero-care">
+    <strong><svg class="concept-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg><span data-i18n="care-title">UseWithCare</span></strong>
+    <p data-i18n="care-desc">More control brings more responsibility: set boundaries, verify results, and keep instructions current.</p>
+  </div>
+</section><main class="page"><section class="chapter" id="s1">
+    <div class="slide"><div class="slide-inner">
+      <span class="kicker"><span data-i18n="s1-kicker">What is a Skill?</span><span class="chapter-number">01 / 07</span></span>
+      <h2 data-i18n="s1-h2">A Skill is know-how written once in SKILL.md — steps, rules, examples — that AI reuses.</h2>
+      <div class="stack">
+        <div class="skill-flow-frame mode-noskill" id="skill-flow-box">
+          <!-- Frame Window Top Bar -->
+          <div class="flow-frame-topbar">
+            <div class="frame-window-controls">
+              <span class="f-ctrl f-ctrl-red" title="Close"></span>
+              <span class="f-ctrl f-ctrl-yellow" title="Minimize"></span>
+              <span class="f-ctrl f-ctrl-green" title="Maximize"></span>
+              <span class="frame-app-title">
+                <span data-i18n="flow-app-title">AI Workflow Simulator</span>
+                <span class="frame-live-badge"><span class="live-dot"></span><span data-i18n="flow-live-badge">LIVE ENGINE</span></span>
+              </span>
+            </div>
+
+            <!-- Mode Selector Switch -->
+            <div class="flow-pill-selector" role="group" aria-label="เลือกโหมดขั้นตอน AI">
+              <button type="button" class="flow-pill-btn active" id="btn-mode-noskill" aria-pressed="true">
+                <span class="pill-dot dot-noskill"></span>
+                <span data-i18n="flow-btn-noskill">No Skill</span>
+              </button>
+              <button type="button" class="flow-pill-btn" id="btn-mode-withskill" aria-pressed="false">
+                <span class="pill-dot dot-withskill"></span>
+                <span data-i18n="flow-btn-withskill">With Skill.md</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Frame Body Content -->
+          <div class="flow-frame-body">
+            <!-- Dynamic Explanation Banner -->
+            <div class="flow-mode-banner banner-noskill" id="flow-mode-banner">
+              <span class="banner-tag" id="banner-tag">No Skill Mode</span>
+              <div class="banner-text-wrap">
+                <span id="banner-text" lang="th">AI ทำงาน 3 ขั้นตอนพื้นฐาน ถาม ➔ คิด ➔ ตอบ</span>
+              </div>
+              <span class="banner-count-badge" id="banner-count-badge">3 ขั้นตอนพื้นฐาน</span>
+            </div>
+
+            <!-- Responsive Pipeline -->
+            <div class="pipeline-layout">
+              <!-- Row 1: 3 Steps (Horizontal on Desktop, Vertical on Mobile) -->
+              <div class="pipeline-row pipeline-row-top">
+                <!-- Card 1: ถาม (User Prompt) -->
+                <div class="graphic-step-card" id="node-ask">
+                  <span class="step-num-badge">01 · INPUT</span>
+                  <div class="graphic-canvas">
+                    <svg viewBox="0 0 88 64" class="svg-motion" aria-hidden="true">
+                      <!-- Speech bubble -->
+                      <rect x="14" y="10" width="56" height="38" rx="10" fill="#f4f3fb" stroke="#181914" stroke-width="1.6"/>
+                      <path d="M22 48 L18 56 L32 48 Z" fill="#f4f3fb" stroke="#181914" stroke-width="1.6" stroke-linejoin="round"/>
+                      <!-- Prompt tag -->
+                      <rect x="22" y="16" width="22" height="6" rx="3" fill="#e2dff7"/>
+                      <!-- 3 Typing dots -->
+                      <circle class="type-dot dot-1" cx="30" cy="31" r="3.5" fill="#181914"/>
+                      <circle class="type-dot dot-2" cx="42" cy="31" r="3.5" fill="#181914"/>
+                      <circle class="type-dot dot-3" cx="54" cy="31" r="3.5" fill="#181914"/>
+                      <!-- Signal transmission waves -->
+                      <path class="signal-wave wave-1" d="M74 21 A 11 11 0 0 1 74 37" fill="none" stroke="#8780d4" stroke-width="2.2" stroke-linecap="round"/>
+                      <path class="signal-wave wave-2" d="M80 16 A 18 18 0 0 1 80 42" fill="none" stroke="#8780d4" stroke-width="2.2" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <div class="card-meta">
+                    <span class="card-title" data-i18n="node-ask-title">ถาม (User Prompt)</span>
+                    <span class="card-sub" data-i18n="node-ask-sub">ผู้ใช้ป้อนคำสั่งหรือโจทย์งาน</span>
+                  </div>
+                </div>
+
+                <!-- Connector 1 -->
+                <div class="pipe-arrow" id="arrow-1">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><polyline points="13 5 20 12 13 19"></polyline></svg>
+                </div>
+
+                <!-- Card 2: คิด (Neural Reasoning) -->
+                <div class="graphic-step-card" id="node-think-1">
+                  <span class="step-num-badge">02 · REASON</span>
+                  <div class="graphic-canvas">
+                    <svg viewBox="0 0 88 64" class="svg-motion" aria-hidden="true">
+                      <!-- Outer orbit ring -->
+                      <ellipse class="orbit-ring" cx="44" cy="32" rx="26" ry="22" fill="none" stroke="#90c7dc" stroke-width="1.5" stroke-dasharray="4 4"/>
+                      <!-- Inner orbit ring -->
+                      <ellipse class="orbit-ring-inner" cx="44" cy="32" rx="18" ry="15" fill="none" stroke="#c2bfeb" stroke-width="1.2" stroke-dasharray="3 3"/>
+                      <!-- Orbiting nodes -->
+                      <g class="orbit-nodes">
+                        <circle cx="44" cy="10" r="3" fill="#181914"/>
+                        <circle cx="70" cy="32" r="3" fill="#8780d4"/>
+                        <circle cx="44" cy="54" r="3" fill="#181914"/>
+                        <circle cx="18" cy="32" r="3" fill="#3b9ab8"/>
+                      </g>
+                      <!-- AI Neural Core -->
+                      <circle class="brain-core-pulse" cx="44" cy="32" r="11" fill="var(--lavender)" stroke="#181914" stroke-width="1.6"/>
+                      <circle cx="44" cy="32" r="5" fill="#ffffff" stroke="#181914" stroke-width="1.2"/>
+                      <circle cx="44" cy="32" r="2" fill="#181914"/>
+                    </svg>
+                  </div>
+                  <div class="card-meta">
+                    <span class="card-title" data-i18n="node-think1-title">คิด (Reasoning)</span>
+                    <span class="card-sub" data-i18n="node-think1-sub">AI วิเคราะห์และประมวลผลคำสั่ง</span>
+                  </div>
+                </div>
+
+                <!-- Connector 2 -->
+                <div class="pipe-arrow" id="arrow-2">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><polyline points="13 5 20 12 13 19"></polyline></svg>
+                </div>
+
+                <!-- Card 3: Morph between No Skill & With Skill -->
+                <!-- 3A. View in No Skill: ตอบทั่วไป (Direct Generic Output) -->
+                <div class="graphic-step-card view-noskill-card" id="node-output-noskill">
+                  <span class="step-num-badge">03 · GENERIC</span>
+                  <div class="graphic-canvas">
+                    <svg viewBox="0 0 88 64" class="svg-motion" aria-hidden="true">
+                      <!-- Document with folded corner -->
+                      <path d="M24 10 L56 10 L66 20 L66 54 L24 54 Z" fill="#ffffff" stroke="#181914" stroke-width="1.6"/>
+                      <path d="M56 10 L56 20 L66 20 Z" fill="#e8eae0" stroke="#181914" stroke-width="1.6"/>
+                      <!-- Generic document lines -->
+                      <line x1="32" y1="22" x2="48" y2="22" stroke="#b0b4a4" stroke-width="2" stroke-linecap="round"/>
+                      <line x1="32" y1="29" x2="58" y2="29" stroke="#cbd0be" stroke-width="1.6" stroke-linecap="round"/>
+                      <line x1="32" y1="36" x2="54" y2="36" stroke="#cbd0be" stroke-width="1.6" stroke-linecap="round"/>
+                      <line x1="32" y1="43" x2="46" y2="43" stroke="#cbd0be" stroke-width="1.6" stroke-linecap="round"/>
+                      <!-- Generic question badge -->
+                      <circle cx="56" cy="45" r="7" fill="#fbf0da" stroke="#c97d26" stroke-width="1.3"/>
+                      <text x="56" y="49" font-size="9" font-weight="bold" fill="#c97d26" text-anchor="middle" font-family="sans-serif">?</text>
+                    </svg>
+                  </div>
+                  <div class="card-meta">
+                    <span class="card-title" data-i18n="node-out-noskill-title">ตอบทั่วไป (Generic)</span>
+                    <span class="card-sub" data-i18n="node-out-noskill-sub">ผลลัพธ์ตามสถิติพื้นฐาน (อาจไม่ตรงใจ)</span>
+                  </div>
+                </div>
+
+                <!-- 3B. View in With Skill: อ่าน Skill (Load SKILL.md) -->
+                <div class="graphic-step-card view-withskill-card" id="node-read-skill">
+                  <span class="step-num-badge">03 · SKILL.MD</span>
+                  <div class="graphic-canvas">
+                    <svg viewBox="0 0 88 64" class="svg-motion" aria-hidden="true">
+                      <!-- Markdown Doc with folded corner -->
+                      <path d="M22 8 L54 8 L66 20 L66 56 L22 56 Z" fill="#faffd6" stroke="#181914" stroke-width="1.6"/>
+                      <path d="M54 8 L54 20 L66 20 Z" fill="#e4f475" stroke="#181914" stroke-width="1.6"/>
+                      <!-- Header Badge SKILL.MD -->
+                      <rect x="28" y="16" width="22" height="6" rx="2" fill="#181914"/>
+                      <text x="39" y="21" font-size="5" font-weight="bold" fill="#faffd6" text-anchor="middle" font-family="monospace">SKILL</text>
+                      <!-- Rule lines -->
+                      <line x1="28" y1="27" x2="58" y2="27" stroke="#181914" stroke-width="1.8" stroke-linecap="round"/>
+                      <line x1="28" y1="34" x2="54" y2="34" stroke="#888c78" stroke-width="1.6" stroke-linecap="round"/>
+                      <line x1="28" y1="41" x2="58" y2="41" stroke="#888c78" stroke-width="1.6" stroke-linecap="round"/>
+                      <line x1="28" y1="48" x2="46" y2="48" stroke="#888c78" stroke-width="1.6" stroke-linecap="round"/>
+                      <!-- Laser Scanner Beam -->
+                      <line class="scan-laser" x1="18" y1="23" x2="70" y2="23" stroke="#8cb500" stroke-width="2.4" stroke-linecap="round"/>
+                      <circle class="scan-spark" cx="64" cy="23" r="3" fill="#edfa91" stroke="#181914" stroke-width="1"/>
+                    </svg>
+                  </div>
+                  <div class="card-meta">
+                    <span class="card-title" data-i18n="node-read-skill-title">อ่าน Skill (Load Manual)</span>
+                    <span class="card-sub" data-i18n="node-read-skill-sub">เปิดอ่านกฎ &amp; ขั้นตอนใน SKILL.md</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Intermediate Flow Bridge (Connects Row 1 to Row 2 seamlessly) -->
+              <div class="pipeline-bridge" id="pipeline-bridge">
+                <div class="bridge-line"></div>
+                <div class="bridge-pill">
+                  <span class="bridge-arrow-icon">↓</span>
+                  <span class="bridge-text" data-i18n="bridge-text">AI ประยุกต์ใช้คู่มือเข้ากับกระบวนการทำงาน</span>
+                  <span class="bridge-tag" data-i18n="bridge-tag">Context Loaded</span>
+                </div>
+                <div class="bridge-line"></div>
+              </div>
+
+              <!-- Row 2: Steps 4, 5, 6 (Only visible in With Skill mode) -->
+              <div class="pipeline-row pipeline-row-bottom" id="pipeline-row-bottom">
+                <!-- Card 4: คิด & วางแผน (Blueprint & Strategy) -->
+                <div class="graphic-step-card" id="node-think-2">
+                  <span class="step-num-badge">04 · STRATEGY</span>
+                  <div class="graphic-canvas">
+                    <svg viewBox="0 0 88 64" class="svg-motion" aria-hidden="true">
+                      <!-- Blueprint card -->
+                      <rect x="18" y="9" width="52" height="46" rx="8" fill="#f8f9f2" stroke="#181914" stroke-width="1.6"/>
+                      <!-- Grid lines -->
+                      <line x1="18" y1="24" x2="70" y2="24" stroke="#e8ebd9" stroke-width="1"/>
+                      <line x1="18" y1="38" x2="70" y2="38" stroke="#e8ebd9" stroke-width="1"/>
+                      <line x1="35" y1="9" x2="35" y2="55" stroke="#e8ebd9" stroke-width="1"/>
+                      <line x1="53" y1="9" x2="53" y2="55" stroke="#e8ebd9" stroke-width="1"/>
+                      <!-- Rotating plan cog -->
+                      <circle class="plan-gear" cx="44" cy="28" r="10" fill="none" stroke="#8780d4" stroke-width="1.8" stroke-dasharray="3 3"/>
+                      <!-- Glowing idea bulb -->
+                      <path class="bulb-glow" d="M38 26 C38 22 41 19 44 19 C47 19 50 22 50 26 C50 29 48 31 47 33 L41 33 C40 31 38 29 38 26 Z" fill="#ffeaa7" stroke="#181914" stroke-width="1.6"/>
+                      <rect x="42" y="34" width="4" height="2.5" fill="#181914"/>
+                      <!-- Milestone roadmap nodes -->
+                      <circle cx="28" cy="46" r="3" fill="#181914"/>
+                      <line x1="31" y1="46" x2="41" y2="46" stroke="#8780d4" stroke-width="2"/>
+                      <circle cx="44" cy="46" r="3" fill="#8780d4"/>
+                      <line x1="47" y1="46" x2="57" y2="46" stroke="#8780d4" stroke-width="2"/>
+                      <circle cx="60" cy="46" r="3" fill="#28ca42"/>
+                    </svg>
+                  </div>
+                  <div class="card-meta">
+                    <span class="card-title" data-i18n="node-think2-title">คิด &amp; วางแผน (Plan)</span>
+                    <span class="card-sub" data-i18n="node-think2-sub">วางกลยุทธ์ตามแนวทางในคู่มือ</span>
+                  </div>
+                </div>
+
+                <!-- Connector 4 -->
+                <div class="pipe-arrow" id="arrow-branch-2">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><polyline points="13 5 20 12 13 19"></polyline></svg>
+                </div>
+
+                <!-- Card 5: ทำตามกฎ (Precision Execution) -->
+                <div class="graphic-step-card" id="node-execute">
+                  <span class="step-num-badge">05 · EXECUTE</span>
+                  <div class="graphic-canvas">
+                    <svg viewBox="0 0 88 64" class="svg-motion" aria-hidden="true">
+                      <!-- Interlocking Cogs -->
+                      <g class="gear-large" transform-origin="34 30">
+                        <circle cx="34" cy="30" r="14" fill="#eeefe6" stroke="#181914" stroke-width="1.6"/>
+                        <circle cx="34" cy="30" r="5" fill="#ffffff" stroke="#181914" stroke-width="1.6"/>
+                        <path d="M34 13 L34 17 M34 43 L34 47 M17 30 L21 30 M47 30 L51 30 M22 18 L25 21 M43 39 L46 42 M22 42 L25 39 M43 21 L46 18" stroke="#181914" stroke-width="2.4" stroke-linecap="round"/>
+                      </g>
+                      <g class="gear-small" transform-origin="56 24">
+                        <circle cx="56" cy="24" r="9" fill="var(--lime)" stroke="#181914" stroke-width="1.6"/>
+                        <circle cx="56" cy="24" r="3" fill="#ffffff" stroke="#181914" stroke-width="1.4"/>
+                        <path d="M56 12 L56 15 M56 33 L56 36 M44 24 L47 24 M65 24 L68 24 M48 16 L50 18 M62 30 L64 32 M48 32 L50 30 M62 18 L64 16" stroke="#181914" stroke-width="2" stroke-linecap="round"/>
+                      </g>
+                      <!-- Progress Track -->
+                      <rect x="22" y="50" width="44" height="5" rx="2.5" fill="#e2e5d5"/>
+                      <rect class="exec-progress-bar" x="22" y="50" width="28" height="5" rx="2.5" fill="#165b2e"/>
+                    </svg>
+                  </div>
+                  <div class="card-meta">
+                    <span class="card-title" data-i18n="node-exec-title">ทำตามกฎ (Execute)</span>
+                    <span class="card-sub" data-i18n="node-exec-sub">ปฏิบัติตามข้อกำหนดและตัวอย่าง</span>
+                  </div>
+                </div>
+
+                <!-- Connector 5 -->
+                <div class="pipe-arrow" id="arrow-branch-3">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><polyline points="13 5 20 12 13 19"></polyline></svg>
+                </div>
+
+                <!-- Card 6: ตอบ Output แม่นยำ (Verified Target Result) -->
+                <div class="graphic-step-card" id="node-output-withskill">
+                  <span class="step-num-badge">06 · TARGET HIT</span>
+                  <div class="graphic-canvas">
+                    <svg viewBox="0 0 88 64" class="svg-motion" aria-hidden="true">
+                      <!-- Output Container Frame -->
+                      <rect x="18" y="9" width="52" height="46" rx="9" fill="#ffffff" stroke="#165b2e" stroke-width="1.8"/>
+                      <path d="M18 19 L70 19" stroke="#d5ebd9" stroke-width="1.4"/>
+                      <!-- Concentric Target Radar Rings -->
+                      <circle class="output-ring" cx="44" cy="35" r="14" fill="#e9fbe4" stroke="#a2e4b0" stroke-width="1.5" stroke-dasharray="3 3"/>
+                      <circle cx="44" cy="35" r="9" fill="#28ca42" stroke="#165b2e" stroke-width="1.5"/>
+                      <!-- Checkmark inside Target -->
+                      <path class="output-check" d="M39 35 L42 38 L49 31" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                      <!-- Sparkle accents -->
+                      <path d="M25 15 L26 13 L27 15 L29 16 L27 17 L26 19 L25 17 L23 16 Z" fill="#28ca42"/>
+                      <path d="M63 47 L64 45 L65 47 L67 48 L65 49 L64 51 L63 49 L61 48 Z" fill="#28ca42"/>
+                    </svg>
+                  </div>
+                  <div class="card-meta">
+                    <span class="card-title" data-i18n="node-out-withskill-title">ตอบแม่นยำ (Verified 🎯)</span>
+                    <span class="card-sub" data-i18n="node-out-withskill-sub">ผลลัพธ์ตรงเป้าหมาย เป็นมาตรฐาน</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div></div>
+  </section><section class="chapter" id="s2"><div class="slide demo-slide"><div class="slide-inner"><span class="kicker"><span data-i18n="s2-kicker">Live demo / follow along</span><span class="chapter-number">02 / 07</span></span><h2 data-i18n="s2-h2">Demo A: without a Skill</h2><div><p data-i18n="s2-desc">Open a new chat. Translate the shared paragraph, then keep the result for comparison.</p><div class="prompt-box" id="demo-prompt-box"><div class="prompt-box-header"><div class="prompt-box-title"><span class="prompt-box-icon" aria-hidden="true">📋</span><span data-i18n="prompt-a-title">ข้อความสำหรับสั่งแปล · Prompt</span></div><button type="button" class="copy-btn" id="copy-prompt-btn-a" aria-label="คัดลอกข้อความทดสอบ"><svg class="copy-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span class="copy-btn-text" data-i18n="copy-btn-text">คัดลอก (Copy)</span></button></div><div class="prompt-box-body"><div class="prompt-command" data-i18n="prompt-command">แปลย่อหน้านี้เป็นภาษาไทย</div><p class="prompt-text">Health technology assessment provides decision-makers with evidence on the costs and outcomes of interventions, which can be used to inform the allocation of limited healthcare resources. In terms of implementation, it is recommended that the findings be communicated to stakeholders in a manner that is both timely and accessible. Furthermore, the involvement of patients and the public in the assessment process is widely regarded as strengthening the legitimacy of coverage decisions.</p></div></div><div class="demo-actions"><a class="demo-link" href="https://claude.ai/" target="_blank" rel="noopener" data-i18n="open-claude">Open Claude ↗</a></div></div></div></div>
+  </section><section class="chapter" id="s3">
+    <div class="slide"><div class="slide-inner">
+      <span class="kicker"><span data-i18n="s3-kicker">Before you add kien-thai</span><span class="chapter-number">03 / 07</span></span>
+      <h2 data-i18n="s3-h2">Open it up: read before you add.</h2>
+      <div class="cols">
+        <div class="tree">
+          <div class="tree-header">
+            <div class="tree-dots" aria-hidden="true">
+              <span class="tree-dot dot-red"></span>
+              <span class="tree-dot dot-yellow"></span>
+              <span class="tree-dot dot-green"></span>
+            </div>
+            <div class="tree-title">
+              <span class="tree-path">repo / <b>skills</b> / <b>kien-thai</b></span>
+            </div>
+          </div>
+          <div class="tree-content">
+            <!-- Root Folder: skills/ -->
+            <div class="tree-node folder open">
+              <div class="tree-row">
+                <span class="tree-icon">📁</span>
+                <span class="tree-name folder-name">skills/</span>
+                <span class="tree-badge badge-repo" data-i18n="tree-skills-badge">Folder</span>
+              </div>
+              <div class="tree-desc" data-i18n="tree-skills-desc">โฟลเดอร์หลักสำหรับเก็บรวบรวมทุก Skill ใน repository</div>
+
+              <!-- Subfolder: kien-thai/ -->
+              <div class="tree-children">
+                <div class="tree-node folder open highlight-skill">
+                  <div class="tree-row">
+                    <span class="tree-icon">📂</span>
+                    <span class="tree-name folder-name">kien-thai/</span>
+                    <span class="tree-badge badge-zip" data-i18n="tree-kien-badge">Subfolder · บีบโฟลเดอร์นี้เป็น ZIP</span>
+                  </div>
+                  <div class="tree-desc" data-i18n="tree-kien-desc">ตัว Skill ที่เราจะนำไปใช้บน Claude (อัปโหลด ZIP โฟลเดอร์นี้)</div>
+
+                  <!-- Inside kien-thai/ -->
+                  <div class="tree-children">
+                    <!-- Required File: SKILL.md -->
+                    <div class="tree-node file" id="tree-node-skillmd">
+                      <div class="tree-row">
+                        <span class="tree-icon">📄</span>
+                        <span class="tree-name file-name">SKILL.md</span>
+                        <span class="tree-badge badge-req" data-i18n="tree-skillmd-badge">Required</span>
+                      </div>
+                      <div class="tree-desc" data-i18n="tree-skillmd-desc">the one required file: name + description on top, then the know-how</div>
+                    </div>
+
+                    <!-- Subfolder: references/ -->
+                    <div class="tree-node folder" id="tree-node-refs">
+                      <div class="tree-row">
+                        <span class="tree-icon">📁</span>
+                        <span class="tree-name folder-name">references/</span>
+                        <span class="tree-badge badge-sub" data-i18n="tree-ref-badge">Subfolder</span>
+                      </div>
+                      <div class="tree-desc" data-i18n="tree-ref-desc">rules and examples it can look up</div>
+                    </div>
+
+                    <!-- Subfolder: scripts/ -->
+                    <div class="tree-node folder" id="tree-node-scripts">
+                      <div class="tree-row">
+                        <span class="tree-icon">📁</span>
+                        <span class="tree-name folder-name"><span class="gl">scripts/</span></span>
+                        <span class="tree-badge badge-opt" data-i18n="tree-scripts-badge">Subfolder · Optional</span>
+                      </div>
+                      <div class="tree-desc" data-i18n="tree-scripts-desc">optional helpers</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stack">
+          <!-- Interactive Inspection Checklist Cards -->
+          <div class="interactive-checks-container" id="interactive-checks">
+            <!-- Card 1: My task -->
+            <div class="check-card active" id="card-check-task" data-target="skillmd" tabindex="0" role="button" aria-expanded="true">
+              <div class="check-card-header">
+                <div class="check-header-left">
+                  <span class="check-icon-circle icon-task" aria-hidden="true"></span>
+                  <div>
+                    <h3 class="check-title" data-i18n="check-1-title">My task</h3>
+                    <p class="check-question" data-i18n="check-1-desc">ทำหน้าที่ตรงกับงานที่เราต้องการให้ทำหรือไม่?</p>
+                  </div>
+                </div>
+                <div class="check-header-badges">
+                  <span class="check-file-badge badge-skillmd">📄 SKILL.md &rsaquo; description</span>
+                  <span class="check-toggle-indicator" aria-hidden="true">▾</span>
+                </div>
+              </div>
+              <div class="check-card-detail">
+                <div class="mini-code-window">
+                  <div class="code-window-topbar">
+                    <div class="window-dots"><span class="wdot dot-r"></span><span class="wdot dot-y"></span><span class="wdot dot-g"></span></div>
+                    <span class="code-file-path">skills/kien-thai/<b>SKILL.md</b> <span class="path-tag">YAML Frontmatter</span></span>
+                  </div>
+                  <div class="code-content">
+                    <pre><code><span class="code-dim">---</span>
+<span class="code-key">name</span>: <span class="code-str">kien-thai</span>
+<span class="code-hl-bg"><span class="code-key">description</span>: <span class="code-str">|
+  แปลเอกสารวิชาการแพทย์และประเมินเทคโนโลยีสุขภาพ (HTA)
+  เป็นภาษาไทยระดับมืออาชีพ ใช้คำศัพท์เฉพาะทางที่ถูกต้อง</span></span>
+<span class="code-dim">---</span></code></pre>
+                  </div>
+                  <div class="code-window-footer">
+                    <span class="scan-pointer" data-i18n="check-1-point">👀 <b>จุดสังเกต:</b> ตรวจสอบบรรทัด <code class="mono-tag">description</code> ว่าตรงกับเป้าหมายงานของเราไหม</span>
+                  </div>
+                </div>
+                <div class="criteria-row">
+                  <span class="crit-pill crit-pass" data-i18n="check-1-pass"><span class="crit-dot dot-pass"></span><b>นำไปใช้:</b> งานแปลเปเปอร์วิจัย / เอกสารวิชาการ HTA</span>
+                  <span class="crit-pill crit-skip" data-i18n="check-1-skip"><span class="crit-dot dot-skip"></span><b>ข้ามไป:</b> งานวิเคราะห์ตัวเลข สรุปสเปรดชีต</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: My way -->
+            <div class="check-card active" id="card-check-way" data-target="skillmd" tabindex="0" role="button" aria-expanded="true">
+              <div class="check-card-header">
+                <div class="check-header-left">
+                  <span class="check-icon-circle icon-way" aria-hidden="true"></span>
+                  <div>
+                    <h3 class="check-title" data-i18n="check-2-title">My way</h3>
+                    <p class="check-question" data-i18n="check-2-desc">กฎและขั้นตอนตรงกับแนวทางที่เราต้องการไหม?</p>
+                  </div>
+                </div>
+                <div class="check-header-badges">
+                  <span class="check-file-badge badge-rules">📄 SKILL.md &rsaquo; Headings &amp; Rules</span>
+                  <span class="check-toggle-indicator" aria-hidden="true">▾</span>
+                </div>
+              </div>
+              <div class="check-card-detail">
+                <div class="mini-code-window">
+                  <div class="code-window-topbar">
+                    <div class="window-dots"><span class="wdot dot-r"></span><span class="wdot dot-y"></span><span class="wdot dot-g"></span></div>
+                    <span class="code-file-path">skills/kien-thai/<b>SKILL.md</b> <span class="path-tag">Guidelines &amp; Rules</span></span>
+                  </div>
+                  <div class="code-content">
+                    <pre><code><span class="code-heading">## Translation Rules &amp; Style Guidelines</span>
+<span class="code-hl-bg">- <span class="code-rule-warn">ALWAYS</span>: ใช้คำศัพท์ทางการแพทย์ตามคลังศัพท์ HITAP</span>
+<span class="code-hl-bg">- <span class="code-rule-warn">NEVER</span>: ห้ามแปลคำต่อคำ (word-by-word) ให้แปลตามบริบทวิจัย</span>
+- ระบุคำศัพท์ภาษาอังกฤษในวงเล็บเมื่อกล่าวถึงครั้งแรก เช่น HTA (การประเมินเทคโนโลยีสุขภาพ)</code></pre>
+                  </div>
+                  <div class="code-window-footer">
+                    <span class="scan-pointer" data-i18n="check-2-point">👀 <b>จุดสังเกต:</b> ตรวจสอบหัวข้อ และคำสั่งบังคับ <code class="mono-tag">ALWAYS / NEVER</code> ว่าตรง SOP หรือไม่</span>
+                  </div>
+                </div>
+                <div class="criteria-row">
+                  <span class="crit-pill crit-pass" data-i18n="check-2-pass"><span class="crit-dot dot-pass"></span><b>นำไปใช้:</b> ต้องการภาษาทางการ มีมาตรฐานคำศัพท์กำกับ</span>
+                  <span class="crit-pill crit-skip" data-i18n="check-2-skip"><span class="crit-dot dot-skip"></span><b>ข้ามไป:</b> ต้องการภาษาพูดสบาย ๆ หรือสรุปแบบสั้นจุ้น</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: My tools -->
+            <div class="check-card active" id="card-check-tools" data-target="scripts" tabindex="0" role="button" aria-expanded="true">
+              <div class="check-card-header">
+                <div class="check-header-left">
+                  <span class="check-icon-circle icon-tools" aria-hidden="true"></span>
+                  <div>
+                    <h3 class="check-title" data-i18n="check-3-title">My tools</h3>
+                    <p class="check-question" data-i18n="check-3-desc">ต้องใช้สคริปต์หรือเครื่องมือภายนอกที่เราไม่มีหรือไม่?</p>
+                  </div>
+                </div>
+                <div class="check-header-badges">
+                  <span class="check-file-badge badge-tools">📁 scripts/ &rsaquo; Helpers</span>
+                  <span class="check-toggle-indicator" aria-hidden="true">▾</span>
+                </div>
+              </div>
+              <div class="check-card-detail">
+                <div class="mini-code-window">
+                  <div class="code-window-topbar">
+                    <div class="window-dots"><span class="wdot dot-r"></span><span class="wdot dot-y"></span><span class="wdot dot-g"></span></div>
+                    <span class="code-file-path">skills/kien-thai/<b>scripts/</b> <span class="path-tag">External Dependencies</span></span>
+                  </div>
+                  <div class="code-content">
+                    <pre><code>skills/kien-thai/scripts/
+├── <span class="code-file-pass">extract_terms.py</span>       <span class="code-comment"># รันสคริปต์สกัดคำศัพท์ทั่วไป (Python)</span>
+└── <span class="code-hl-warn"><span class="code-file-alert">local_ollama.sh</span>        <span class="code-alert-txt"># ⚠️ รันโมเดลเฉพาะเครื่อง (claude.ai รันไม่ได้!)</span></span></code></pre>
+                  </div>
+                  <div class="code-window-footer">
+                    <span class="scan-pointer" data-i18n="check-3-point">👀 <b>จุดสังเกต:</b> ตรวจดูว่าใน <code class="mono-tag">scripts/</code> มีเครื่องมือที่รันบนเว็บไม่ได้ไหม</span>
+                  </div>
+                </div>
+                <div class="criteria-row">
+                  <span class="crit-pill crit-pass" data-i18n="check-3-pass"><span class="crit-dot dot-pass"></span><b>นำไปใช้:</b> รันบนเครื่องตนเอง (CLI / Claude Code) มี Python พร้อม</span>
+                  <span class="crit-pill crit-warn" data-i18n="check-3-warn"><span class="crit-dot dot-warn"></span><b>ข้อจำกัด:</b> บน claude.ai ผ่านเว็บ รัน local shell/model ไม่ได้</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Upgraded Governance & Safety Alert Card -->
+          <div class="license-alert-card">
+            <div class="license-alert-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+            </div>
+            <div class="license-alert-text">
+              <div class="alert-headline">
+                <strong data-i18n="license-alert-title">License tells you if you may use it, not if it's safe.</strong>
+                <span class="alert-safety-pill">Security &amp; Compliance</span>
+              </div>
+              <p data-i18n="license-alert-desc">
+                License (เช่น MIT หรือ Internal) ระบุเพียงสิทธิ์ตามกฎหมาย <strong>แต่ไม่ได้รับประกันความถูกต้องหรือความปลอดภัย</strong> ต้องตรวจสอบคำสั่งในโค้ดเองทุกครั้ง และ<strong>ห้ามใส่ข้อมูลลับหรือข้อมูลผู้ป่วย (Sensitive / Patient Data)</strong> ลงไป
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div></div>
+  </section><section class="chapter" id="s4"><div class="slide demo-slide"><div class="slide-inner"><span class="kicker"><span data-i18n="s4-kicker">Live demo / follow along</span><span class="chapter-number">04 / 07</span></span><h2 data-i18n="s4-h2">Add it, turn it on.</h2><div><p data-i18n="s4-desc">Add the prepared kien-thai ZIP, then check that it appears under Yours and is turned on.</p><div class="download-card" id="zip-download-box"><div class="download-card-body"><div class="download-card-icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg></div><div class="download-card-info"><div class="download-file-row"><span class="download-file-name">kien-thai.zip</span><span class="download-file-size" data-i18n="download-badge">59 KB · ZIP Archive</span></div><p class="download-card-desc" data-i18n="download-desc">ไฟล์ Skill สำเร็จรูป พร้อมนำไปอัปโหลดติดตั้งใน Claude (เมนู Customize &gt; Skills)</p></div></div><div class="download-card-action"><a href="kien-thai.zip" download class="download-btn" id="btn-download-zip" aria-label="ดาวน์โหลด kien-thai.zip"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg><span data-i18n="download-btn">ดาวน์โหลด kien-thai.zip ↓</span></a></div></div><div class="demo-actions"><a class="demo-link" href="https://claude.ai/" target="_blank" rel="noopener" data-i18n="open-claude">Open Claude ↗</a></div></div></div></div>
+  </section><section class="chapter" id="s5"><div class="slide demo-slide"><div class="slide-inner"><span class="kicker"><span data-i18n="s5-kicker">Live demo / follow along</span><span class="chapter-number">05 / 07</span></span><h2 data-i18n="s5-h2">Demo B: compare the results</h2><div><p data-i18n="s5-desc">Use a new chat with the same model, paragraph and prompt. Compare with Demo A. One case is not proof of improvement every time.</p><div class="prompt-box"><div class="prompt-box-header"><div class="prompt-box-title"><span class="prompt-box-icon" aria-hidden="true">📋</span><span data-i18n="prompt-b-title">ข้อความสำหรับสั่งแปล (Prompt เดียวกับ Demo A)</span></div><button type="button" class="copy-btn" id="copy-prompt-btn-b" aria-label="คัดลอกข้อความทดสอบ"><svg class="copy-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span class="copy-btn-text" data-i18n="copy-btn-text">คัดลอก (Copy)</span></button></div><div class="prompt-box-body"><div class="prompt-command" data-i18n="prompt-command">แปลย่อหน้านี้เป็นภาษาไทย</div><p class="prompt-text">Health technology assessment provides decision-makers with evidence on the costs and outcomes of interventions, which can be used to inform the allocation of limited healthcare resources. In terms of implementation, it is recommended that the findings be communicated to stakeholders in a manner that is both timely and accessible. Furthermore, the involvement of patients and the public in the assessment process is widely regarded as strengthening the legitimacy of coverage decisions.</p></div></div><div class="demo-actions"><a class="demo-link" href="https://claude.ai/" target="_blank" rel="noopener" data-i18n="open-claude">Open Claude ↗</a></div></div></div></div>
+  </section><section class="chapter" id="s6">
+    <div class="slide"><div class="slide-inner">
+      <span class="kicker"><span data-i18n="s6-kicker">How did Claude know?</span><span class="chapter-number">06 / 07</span></span>
+      <h2 data-i18n="s6-h2">Claude reads the label first, the manual only when needed.</h2>
+      <div class="stack">
+        <button class="reveal" type="button" data-i18n="reveal-btn">Explore one layer at a time</button><div class="layers">
+          <div class="layer"><span class="step" data-i18n="layer-1-step">1 · Label</span><span><b data-i18n="layer-1-title">name + description</b></span><span class="small" data-i18n="layer-1-desc">Claude sees this for every Skill you have on</span></div>
+          <div class="layer"><span class="step" data-i18n="layer-2-step">2 · Manual</span><span><b data-i18n="layer-2-title">the rest of SKILL.md</b></span><span class="small" data-i18n="layer-2-desc">read when your task matches</span></div>
+          <div class="layer opt"><span class="step" data-i18n="layer-3-step">3 · Extras</span><span><b class="mono" data-i18n="layer-3-title">references/, scripts/</b></span><span class="small" data-i18n="layer-3-desc">opened only if needed</span></div>
+        </div>
+        <p class="checkline" data-i18n="checkline-text"><b>Check:</b> open Claude's steps — did it read SKILL.md?</p>
+      </div>
+    </div></div>
+  </section><section class="chapter" id="s-close">
+    <div class="slide"><div class="slide-inner">
+      <span class="kicker"><span data-i18n="close-kicker">Before we wrap up</span><span class="chapter-number">07 / 07</span></span>
+      <h2 data-i18n="close-h2">Skills help AI work your way. You still own the result.</h2>
+      <div class="stack">
+        <div class="takeaways-card">
+          <div class="takeaways-card-header">
+            <div class="takeaways-card-title" data-i18n="takeaways-title">3 สิ่งที่อยากให้จำ</div>
+            <span class="takeaways-tag" data-i18n="takeaways-tag">Key Takeaways</span>
+          </div>
+          <div class="takeaways-table-wrap">
+            <table class="takeaways-table">
+              <thead>
+                <tr>
+                  <th class="col-num">#</th>
+                  <th class="col-en" data-i18n="th-col-en">ให้จำได้ว่า (EN)</th>
+                  <th class="col-th" data-i18n="th-col-th">ความหมาย (พูดไทย)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="col-num"><span class="takeaways-num-badge num-badge-1">1</span></td>
+                  <td class="col-en">Skills help AI work your way.</td>
+                  <td class="col-th" data-i18n="row-1-th">เขียน know-how ไว้ครั้งเดียว แล้ว AI หยิบไปใช้ซ้ำ ไม่ต้องอธิบายใหม่ทุกแชต</td>
+                </tr>
+                <tr>
+                  <td class="col-num"><span class="takeaways-num-badge num-badge-2">2</span></td>
+                  <td class="col-en">Make it yours.</td>
+                  <td class="col-th" data-i18n="row-2-th">ใช้ของคนอื่น ปรับเป็น personal copy หรือเขียนเองก็ได้ แต่ต้องอ่านก่อนเพิ่มทุกครั้ง</td>
+                </tr>
+                <tr>
+                  <td class="col-num"><span class="takeaways-num-badge num-badge-3">3</span></td>
+                  <td class="col-en">You still own the result.</td>
+                  <td class="col-th" data-i18n="row-3-th">Skill ช่วยวางขั้นตอน แต่ไม่รับประกันว่าผลถูก ต้องตรวจผลเอง และห้ามใส่ข้อมูลผู้ป่วยหรือข้อมูลลับ</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Q&A Section Heading -->
+        <div class="qa-heading-block">
+          <h2 class="qa-heading" data-i18n="qa-heading">Q&amp;A</h2>
+        </div>
+
+        <!-- macOS Window Chat (Picture 2: White display area + Gray input footer) -->
+        <div class="mac-window-chat" id="mac-window-chat">
+          <!-- Window Header with Traffic Light Dots -->
+          <div class="mac-win-header">
+            <div class="mac-win-dots" aria-hidden="true">
+              <span class="mac-dot dot-red"></span>
+              <span class="mac-dot dot-yellow"></span>
+              <span class="mac-dot dot-green"></span>
+            </div>
+            <div class="mac-win-address">
+              <span>community / <b>PANDA</b> / <b>live</b></span>
+            </div>
+          </div>
+
+          <!-- White Message Display Area (ตรงสีขาวคือจะโชว์ข้อความที่คนพิมพ์มา) -->
+          <div class="mac-messages-display" id="mac-messages-display" role="log" aria-live="polite">
+            <!-- Dynamic text messages render here -->
+          </div>
+
+          <!-- Emoji Picker Drawer (toggled by 😊) -->
+          <div class="mac-emoji-drawer" id="mac-emoji-drawer" hidden>
+            <div class="mac-emoji-grid">
+              <button type="button" class="mac-emoji-item" data-emoji="🐼" aria-label="Panda">🐼</button>
+              <button type="button" class="mac-emoji-item" data-emoji="😊" aria-label="Smiley">😊</button>
+              <button type="button" class="mac-emoji-item" data-emoji="👍" aria-label="Thumbs up">👍</button>
+              <button type="button" class="mac-emoji-item" data-emoji="❤️" aria-label="Heart">❤️</button>
+              <button type="button" class="mac-emoji-item" data-emoji="🔥" aria-label="Fire">🔥</button>
+              <button type="button" class="mac-emoji-item" data-emoji="💡" aria-label="Idea">💡</button>
+              <button type="button" class="mac-emoji-item" data-emoji="🎉" aria-label="Party">🎉</button>
+              <button type="button" class="mac-emoji-item" data-emoji="✨" aria-label="Sparkles">✨</button>
+              <button type="button" class="mac-emoji-item" data-emoji="🚀" aria-label="Rocket">🚀</button>
+              <button type="button" class="mac-emoji-item" data-emoji="😂" aria-label="Laugh">😂</button>
+              <button type="button" class="mac-emoji-item" data-emoji="🙏" aria-label="Pray">🙏</button>
+              <button type="button" class="mac-emoji-item" data-emoji="👏" aria-label="Clap">👏</button>
+              <button type="button" class="mac-emoji-item" data-emoji="☕" aria-label="Coffee">☕</button>
+              <button type="button" class="mac-emoji-item" data-emoji="💬" aria-label="Speech">💬</button>
+              <button type="button" class="mac-emoji-item" data-emoji="💯" aria-label="Hundred">💯</button>
+              <button type="button" class="mac-emoji-item" data-emoji="🥳" aria-label="Celebrate">🥳</button>
+            </div>
+          </div>
+
+          <!-- Gray Footer Area (ตรงสีเทาคือให้คนสามารถพิมพ์แล้วกดส่งได้) -->
+          <div class="mac-input-footer">
+            <form id="mac-input-form">
+              <div class="mac-input-pill">
+                <input type="text" id="mac-msg-input" class="mac-text-input" placeholder="พิมพ์ข้อความที่นี่... (สูงสุด 500 ตัวอักษร)" data-i18n-ph="panda-input-ph" maxlength="500" required autocomplete="off" />
+                <span class="mac-char-counter" id="mac-char-counter" aria-live="polite">0/500</span>
+                <button type="button" class="mac-emoji-btn" id="mac-emoji-toggle" title="เลือกอีโมจิ" aria-label="Select Emoji">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+                </button>
+                <button type="submit" class="mac-send-btn" id="mac-send-btn">
+                  <span data-i18n="panda-send-text">ส่ง</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div></div>
+  </section></main><footer class="site-footer"><div><strong data-i18n="brand">Skills, Your Way</strong><p data-i18n="footer-text">HITAP/P&D/Data Team</p></div><a class="back-top" href="#top" data-i18n="back-top">Back to top ↑</a></footer><div class="glossary-pop" role="status" hidden></div><script>
+const menu=document.querySelector('.menu-toggle'),nav=document.querySelector('.site-nav');menu.onclick=()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',open)};nav.querySelectorAll('a').forEach(a=>a.onclick=()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false')});
+const glossary={"scripts/":"ชุดโค้ดช่วยทำงาน ซึ่งอาจต้องใช้เครื่องมือเพิ่มเติม",model:"โมเดล AI ที่ประมวลผลและสร้างคำตอบ"};const popup=document.querySelector('.glossary-pop');document.querySelectorAll('.gl').forEach(el=>{const def=glossary[el.textContent.trim()];if(!def)return;el.tabIndex=0;el.setAttribute('role','button');el.title=def;el.onclick=e=>{e.stopPropagation();popup.textContent=el.textContent+' — '+def;popup.hidden=false};el.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();el.click()}}});document.addEventListener('click',()=>popup.hidden=true);document.addEventListener('keydown',e=>{if(e.key==='Escape'){popup.hidden=true;nav.classList.remove('open');menu.setAttribute('aria-expanded','false')}});
+
+// --- Bilingual Translation Engine (TH / EN) ---
+const i18n = {
+  th: {
+    "brand": "Skills, Your Way",
+    "nav-idea": "The idea",
+    "nav-try": "Try it",
+    "nav-inside": "Inside a Skill",
+    "nav-takeaways": "Takeaways",
+    "hero-badge": "HITAP · AI SKILLS · SKILL.md",
+    "hero-h1": "Turn your know-how into skills <em>AI and your team can use.</em>",
+    "concept-1-title": "CaptureKnowHow",
+    "concept-1-desc": "เหมือน <b>SOP ประจำตำแหน่ง</b> หรือชีตสูตรที่เขียนขั้นตอน วิธีคิด กฎห้ามทำ และตัวอย่าง ไว้ในไฟล์ <code class=\"inline-code\">SKILL.md</code> ให้ AI อ่านก่อนเริ่มงาน",
+    "concept-2-title": "MakeItYours",
+    "concept-2-desc": "ไม่ต้องเริ่มอธิบายใหม่ทุกแชต ปรับให้ตรงกับงานวิจัย เอกสาร หรืองานไอที ทุกคนในทีมได้ผลงาน<b>มาตรฐานเดียวกัน</b>ทันที",
+    "concept-3-title": "ShareAndImprove",
+    "concept-3-desc": "ส่งต่อความรู้ในทีมได้ง่ายขึ้น ใครก็หยิบไปใช้หรือปรับปรุงต่อยอดได้ <b>แค่เขียนวิธีทำงานเป็นภาษาคน AI ก็อ่านรู้เรื่อง</b>",
+    "care-title": "UseWithCare",
+    "care-desc": "ถ้าไม่มี Skill คุณต้องคอยป้อนบริบทซ้ำ ๆ แต่เมื่อมี Skill AI จะเข้าใจบริบทองค์กร รู้วิธีคิดที่ถูกต้อง อย่างไรก็ดีคุณยังต้องตรวจสอบผลลัพธ์และไม่ใส่ข้อมูลลับเสมอ",
+    "s1-kicker": "What is a Skill?",
+    "s1-h2": "A Skill is know-how written once in SKILL.md — steps, rules, examples — that AI reuses.",
+    "flow-app-title": "AI Workflow Simulator",
+    "flow-live-badge": "LIVE ENGINE",
+    "flow-btn-noskill": "No Skill",
+    "flow-btn-withskill": "With Skill.md",
+    "node-ask-title": "ถาม (User Prompt)",
+    "node-ask-sub": "ผู้ใช้ป้อนคำสั่งหรือโจทย์งาน",
+    "node-think1-title": "คิด (Thinking)",
+    "node-think1-sub": "ตีความและค้นหาความรู้เดิม",
+    "node-out-noskill-title": "ตอบทั่วไป (Generic Output)",
+    "node-out-noskill-sub": "ผลลัพธ์กว้าง ๆ ขาดมาตรฐานเฉพาะทาง",
+    "node-read-skill-title": "อ่าน Skill (Read SKILL.md)",
+    "node-read-skill-sub": "ดึงข้อกำหนด SOP และตัวอย่างเฉพาะ",
+    "bridge-text": "ส่งต่อคู่มือและกฎเกณฑ์เข้าสู่การประมวลผลเชิงลึก",
+    "bridge-tag": "PIPELINE BRIDGE",
+    "node-think2-title": "คิดตามคู่มือ (Plan with Rules)",
+    "node-think2-sub": "วางแผนใหม่ตามแนวทางใน SKILL.md",
+    "node-exec-title": "ทำตามกฎ (Execute)",
+    "node-exec-sub": "ปฏิบัติตามข้อกำหนดและตัวอย่าง",
+    "node-out-withskill-title": "ตอบแม่นยำ (Verified 🎯)",
+    "node-out-withskill-sub": "ผลลัพธ์ตรงเป้าหมาย เป็นมาตรฐาน",
+    "s2-kicker": "Live demo / follow along",
+    "s2-h2": "Demo A: without a Skill",
+    "s2-desc": "เปิดแชตใหม่ใน Claude แล้วคัดลอกย่อหน้าทดสอบนี้ไปแปล เพื่อเก็บผลลัพธ์ไว้เปรียบเทียบ",
+    "prompt-a-title": "Prompt A · Translation Benchmark",
+    "copy-btn-text": "คัดลอกคำสั่ง (Copy)",
+    "prompt-command": "แปลย่อหน้านี้เป็นภาษาไทย",
+    "open-claude": "เปิด Claude.ai ↗",
+    "s3-kicker": "Before you add kien-thai",
+    "s3-h2": "Open it up: read before you add.",
+    "tree-skills-badge": "Folder",
+    "tree-skills-desc": "โฟลเดอร์หลักสำหรับเก็บรวบรวมทุก Skill ใน repository",
+    "tree-kien-badge": "Subfolder · บีบโฟลเดอร์นี้เป็น ZIP",
+    "tree-kien-desc": "ตัว Skill ที่เราจะนำไปใช้บน Claude (อัปโหลด ZIP โฟลเดอร์นี้)",
+    "tree-skillmd-badge": "Required",
+    "tree-skillmd-desc": "หัวใจหลักไฟล์เดียวที่จำเป็น: มี name + description ด้านบน ตามด้วยคู่มือขั้นตอนทำงาน",
+    "tree-ref-badge": "Subfolder",
+    "tree-ref-desc": "เก็บเอกสารอ้างอิง กฎเกณฑ์ และตัวอย่างผลลัพธ์ที่ดี",
+    "tree-scripts-badge": "Subfolder · Optional",
+    "tree-scripts-desc": "สคริปต์หรือเครื่องมือช่วยคำนวณที่เรียกใช้เมื่อจำเป็น",
+    "check-1-title": "My task",
+    "check-1-desc": "ทำหน้าที่ตรงกับงานที่เราต้องการให้ทำหรือไม่?",
+    "check-1-point": "👀 <b>จุดสังเกต:</b> ตรวจสอบบรรทัด <code class=\"mono-tag\">description</code> ว่าตรงกับเป้าหมายงานของเราไหม",
+    "check-1-pass": "<span class=\"crit-dot dot-pass\"></span><b>นำไปใช้:</b> งานแปลเปเปอร์วิจัย / เอกสารวิชาการ HTA",
+    "check-1-skip": "<span class=\"crit-dot dot-skip\"></span><b>ข้ามไป:</b> งานวิเคราะห์ตัวเลข สรุปสเปรดชีต",
+    "check-2-title": "My way",
+    "check-2-desc": "กฎและขั้นตอนตรงกับแนวทางที่เราต้องการไหม?",
+    "check-2-point": "👀 <b>จุดสังเกต:</b> ตรวจสอบหัวข้อ และคำสั่งบังคับ <code class=\"mono-tag\">ALWAYS / NEVER</code> ว่าตรง SOP หรือไม่",
+    "check-2-pass": "<span class=\"crit-dot dot-pass\"></span><b>นำไปใช้:</b> ต้องการภาษาทางการ มีมาตรฐานคำศัพท์กำกับ",
+    "check-2-skip": "<span class=\"crit-dot dot-skip\"></span><b>ข้ามไป:</b> ต้องการภาษาพูดสบาย ๆ หรือสรุปแบบสั้นจุ้น",
+    "check-3-title": "My tools",
+    "check-3-desc": "ต้องใช้สคริปต์หรือเครื่องมือภายนอกที่เราไม่มีหรือไม่?",
+    "check-3-point": "👀 <b>จุดสังเกต:</b> ตรวจดูว่าใน <code class=\"mono-tag\">scripts/</code> มีเครื่องมือที่รันบนเว็บไม่ได้ไหม",
+    "check-3-pass": "<span class=\"crit-dot dot-pass\"></span><b>นำไปใช้:</b> รันบนเครื่องตนเอง (CLI / Claude Code) มี Python พร้อม",
+    "check-3-warn": "<span class=\"crit-dot dot-warn\"></span><b>ข้อจำกัด:</b> บน claude.ai ผ่านเว็บ รัน local shell/model ไม่ได้",
+    "license-alert-title": "License tells you if you may use it, not if it's safe.",
+    "license-alert-desc": "License (เช่น MIT หรือ Internal) ระบุเพียงสิทธิ์ตามกฎหมาย <strong>แต่ไม่ได้รับประกันความถูกต้องหรือความปลอดภัย</strong> ต้องตรวจสอบคำสั่งในโค้ดเองทุกครั้ง และ<strong>ห้ามใส่ข้อมูลลับหรือข้อมูลผู้ป่วย (Sensitive / Patient Data)</strong> ลงไป",
+    "s4-kicker": "Live demo / follow along",
+    "s4-h2": "Add it, turn it on.",
+    "s4-desc": "ดาวน์โหลดไฟล์ ZIP สำเร็จรูป แล้วนำไปอัปโหลดใน Claude (เมนู Customize > Skills) ตรวจดูให้แน่ใจว่าเปิดใช้งานแล้ว",
+    "download-badge": "59 KB · ZIP Archive",
+    "download-desc": "ไฟล์ Skill สำเร็จรูป พร้อมนำไปอัปโหลดติดตั้งใน Claude (เมนู Customize > Skills)",
+    "download-btn": "ดาวน์โหลด kien-thai.zip ↓",
+    "s5-kicker": "Live demo / follow along",
+    "s5-h2": "Demo B: compare the results",
+    "s5-desc": "เปิดแชตใหม่ ใช้โมเดลเดิม ส่งข้อความและโจทย์เดิม แล้วเปรียบเทียบกับ Demo A จะเห็นความต่างอย่างชัดเจน",
+    "prompt-b-title": "Prompt B (Same Prompt as Demo A)",
+    "s6-kicker": "How did Claude know?",
+    "s6-h2": "Claude reads the label first, the manual only when needed.",
+    "reveal-btn": "สำรวจทีละชั้น (Explore one layer at a time)",
+    "layer-1-step": "1 · Label",
+    "layer-1-title": "name + description",
+    "layer-1-desc": "Claude เห็นส่วนนี้ตลอดเวลาสำหรับทุก Skill ที่เปิดอยู่ เพื่อเลือกว่าจะใช้ไหม",
+    "layer-2-step": "2 · Manual",
+    "layer-2-title": "the rest of SKILL.md",
+    "layer-2-desc": "เปิดอ่านเฉพาะเมื่อโจทย์ของผู้ใช้ตรงกับเงื่อนไขของ Skill นั้น",
+    "layer-3-step": "3 · Extras",
+    "layer-3-title": "references/, scripts/",
+    "layer-3-desc": "เปิดอ่านหรือสั่งรันเฉพาะเมื่อจำเป็นจริง ๆ ไม่เปลือง token",
+    "checkline-text": "<b>วิธีตรวจสอบ:</b> ลองกดดูขั้นตอนการคิดของ Claude — มีคำสั่งเปิดอ่าน SKILL.md หรือไม่?",
+    "close-kicker": "Before we wrap up",
+    "close-h2": "Skills help AI work your way. You still own the result.",
+    "takeaways-title": "3 สิ่งที่อยากให้จำ",
+    "takeaways-tag": "Key Takeaways",
+    "th-col-en": "ให้จำได้ว่า (EN)",
+    "th-col-th": "ความหมาย (พูดไทย)",
+    "row-1-th": "เขียน know-how ไว้ครั้งเดียว แล้ว AI หยิบไปใช้ซ้ำ ไม่ต้องอธิบายใหม่ทุกแชต",
+    "row-2-th": "ใช้ของคนอื่น ปรับเป็น personal copy หรือเขียนเองก็ได้ แต่ต้องอ่านก่อนเพิ่มทุกครั้ง",
+    "row-3-th": "Skill ช่วยวางขั้นตอน แต่ไม่รับประกันว่าผลถูก ต้องตรวจผลเอง และห้ามใส่ข้อมูลผู้ป่วยหรือข้อมูลลับ",
+    "qa-heading": "Q&A",
+    "panda-input-ph": "พิมพ์ข้อความที่นี่... (สูงสุด 500 ตัวอักษร)",
+    "panda-send-text": "ส่ง",
+    "footer-text": "HITAP/P&D/Data Team",
+    "back-top": "Back to top ↑"
+  },
+  en: {
+    "brand": "Skills, Your Way",
+    "nav-idea": "The Idea",
+    "nav-try": "Try It",
+    "nav-inside": "Inside",
+    "nav-takeaways": "Takeaways",
+    "hero-badge": "HITAP · AI SKILLS · SKILL.md",
+    "hero-h1": "Turn your know-how into skills <em>AI and your team can use.</em>",
+    "concept-1-title": "Capture Know-How",
+    "concept-1-desc": "Like a <b>team SOP</b> or cheat sheet containing step-by-step logic, constraints, and examples in a <code class=\"inline-code\">SKILL.md</code> file for AI to follow.",
+    "concept-2-title": "Make It Yours",
+    "concept-2-desc": "No need to re-explain context in every chat. Adapt instructions for research, reports, or data tasks so everyone gets <b>consistent quality</b>.",
+    "concept-3-title": "Share & Improve",
+    "concept-3-desc": "Share working methods across the team and refine them through use. <b>Just write clear human instructions and AI follows them accurately.</b>",
+    "care-title": "Use With Care",
+    "care-desc": "More control brings more responsibility: set clear boundaries, verify results, keep human judgment in the loop, and never expose sensitive data.",
+    "s1-kicker": "01 · The Core Idea",
+    "s1-h2": "A Skill is know-how written once in SKILL.md — steps, rules, examples — that AI reuses.",
+    "flow-app-title": "AI Workflow Simulator",
+    "flow-live-badge": "LIVE ENGINE",
+    "flow-btn-noskill": "No Skill",
+    "flow-btn-withskill": "With Skill.md",
+    "node-ask-title": "Input (User Prompt)",
+    "node-ask-sub": "User provides task instruction",
+    "node-think1-title": "Thinking (Reasoning)",
+    "node-think1-sub": "Interpreting intent & general priors",
+    "node-out-noskill-title": "Generic Output",
+    "node-out-noskill-sub": "Broad answer lacking domain guidelines",
+    "node-read-skill-title": "Read SKILL.md",
+    "node-read-skill-sub": "Load domain SOPs, constraints & rules",
+    "bridge-text": "Routing guidelines & custom rules into deep execution",
+    "bridge-tag": "PIPELINE BRIDGE",
+    "node-think2-title": "Plan with Rules",
+    "node-think2-sub": "Formulate plan strictly adhering to SOP",
+    "node-exec-title": "Execute (Follow Rules)",
+    "node-exec-sub": "Follow constraints, examples & verification",
+    "node-out-withskill-title": "Standardized Result 🎯",
+    "node-out-withskill-sub": "Accurate, compliant & production-ready",
+    "s2-kicker": "02 · Live Demo",
+    "s2-h2": "Demo A: without a Skill",
+    "s2-desc": "Open a new chat in Claude. Translate the shared paragraph, then keep the result for comparison.",
+    "prompt-a-title": "Translation Benchmark · Prompt A",
+    "copy-btn-text": "Copy Prompt",
+    "prompt-command": "Translate this paragraph into Thai",
+    "open-claude": "Open Claude.ai ↗",
+    "s3-kicker": "03 · Inside the Folder",
+    "s3-h2": "Open it up: read before you add.",
+    "tree-skills-badge": "Folder",
+    "tree-skills-desc": "Root directory containing all project skills in your repository",
+    "tree-kien-badge": "Subfolder · Compress to ZIP",
+    "tree-kien-desc": "The actual Skill folder uploaded to Claude (ZIP archive format)",
+    "tree-skillmd-badge": "Required",
+    "tree-skillmd-desc": "The one mandatory file: name + description metadata on top, know-how instructions below",
+    "tree-ref-badge": "Subfolder",
+    "tree-ref-desc": "Domain rules, data dictionaries, guidelines, and gold-standard examples",
+    "tree-scripts-badge": "Subfolder · Optional",
+    "tree-scripts-desc": "Optional automation helpers and calculation scripts",
+    "check-1-title": "My task",
+    "check-1-desc": "Does it do the specific job I need?",
+    "check-1-point": "👀 <b>Inspection tip:</b> Check <code class=\"mono-tag\">description</code> to verify capability matches your goal",
+    "check-1-pass": "<span class=\"crit-dot dot-pass\"></span><b>Use it:</b> Medical research & HTA academic translations",
+    "check-1-skip": "<span class=\"crit-dot dot-skip\"></span><b>Skip:</b> Spreadsheet calculation or generic coding",
+    "check-2-title": "My way",
+    "check-2-desc": "Do its rules match how I want it done?",
+    "check-2-point": "👀 <b>Inspection tip:</b> Inspect headings and <code class=\"mono-tag\">ALWAYS / NEVER</code> guardrails for SOP match",
+    "check-2-pass": "<span class=\"crit-dot dot-pass\"></span><b>Use it:</b> Needs formal tone with governed institutional terms",
+    "check-2-skip": "<span class=\"crit-dot dot-skip\"></span><b>Skip:</b> Needs casual phrasing or ultra-condensed bullet points",
+    "check-3-title": "My tools",
+    "check-3-desc": "Does it need tools, files, or access I lack?",
+    "check-3-point": "👀 <b>Inspection tip:</b> Check <code class=\"mono-tag\">scripts/</code> for local binaries or web limitations",
+    "check-3-pass": "<span class=\"crit-dot dot-pass\"></span><b>Works:</b> Running locally (CLI / Claude Code) with Python installed",
+    "check-3-warn": "<span class=\"crit-dot dot-warn\"></span><b>Web limitation:</b> claude.ai cannot execute local shell scripts or models",
+    "license-alert-title": "License tells you if you may use it, not if it's safe.",
+    "license-alert-desc": "A license (e.g. MIT, Apache) only specifies legal permission. <strong>It never guarantees correctness or safety.</strong> Always inspect code yourself and <strong>never input sensitive or patient data</strong>.",
+    "s4-kicker": "04 · Install & Enable",
+    "s4-h2": "Add it, turn it on.",
+    "s4-desc": "Download the prepared kien-thai ZIP, upload it in Claude (Customize > Skills), and verify it is turned on.",
+    "download-badge": "59 KB · ZIP Archive",
+    "download-desc": "Ready-to-use Skill archive for Claude (upload under Customize > Skills)",
+    "download-btn": "Download kien-thai.zip ↓",
+    "s5-kicker": "05 · Compare Results",
+    "s5-h2": "Demo B: compare the results",
+    "s5-desc": "Open a new chat with the same model, paragraph, and prompt. Compare with Demo A to observe the quality leap.",
+    "prompt-b-title": "Translation Benchmark (Same Prompt as Demo A)",
+    "s6-kicker": "06 · How It Works",
+    "s6-h2": "Claude reads the label first, the manual only when needed.",
+    "reveal-btn": "Explore one layer at a time",
+    "layer-1-step": "1 · Label",
+    "layer-1-title": "name + description",
+    "layer-1-desc": "Claude sees this constantly across all available skills to decide relevance",
+    "layer-2-step": "2 · Manual",
+    "layer-2-title": "the rest of SKILL.md",
+    "layer-2-desc": "Loaded only when your task matches the skill's triggers",
+    "layer-3-step": "3 · Extras",
+    "layer-3-title": "references/, scripts/",
+    "layer-3-desc": "Opened or executed only when needed — saving context window",
+    "checkline-text": "<b>Check:</b> Inspect Claude's steps — did it read SKILL.md?",
+    "close-kicker": "07 · Summary",
+    "close-h2": "Skills help AI work your way. You still own the result.",
+    "takeaways-title": "3 Things to Remember",
+    "takeaways-tag": "Key Takeaways",
+    "th-col-en": "Motto (EN)",
+    "th-col-th": "Meaning & Application",
+    "row-1-th": "Write know-how once. AI reuses it across conversations without repeating instructions.",
+    "row-2-th": "Use shared skills, customize your personal fork, or write your own. Always inspect before adding.",
+    "row-3-th": "Skills guide the workflow but don't guarantee correctness. Always verify outputs and protect confidential data.",
+    "qa-heading": "Q&A",
+    "panda-input-ph": "Type your message here... (max 500 chars)",
+    "panda-send-text": "Send",
+    "footer-text": "HITAP/P&D/Data Team",
+    "back-top": "Back to top ↑"
+  }
+};
+
+window.currentLang = 'th';
+
+function switchLanguage(lang) {
+  if (!i18n[lang]) return;
+  window.currentLang = lang;
+  document.documentElement.lang = lang;
+
+  // Toggle button styling
+  const btnTh = document.getElementById('btn-lang-th');
+  const btnEn = document.getElementById('btn-lang-en');
+  if (btnTh && btnEn) {
+    if (lang === 'th') {
+      btnTh.classList.add('active');
+      btnTh.setAttribute('aria-pressed', 'true');
+      btnEn.classList.remove('active');
+      btnEn.setAttribute('aria-pressed', 'false');
+    } else {
+      btnEn.classList.add('active');
+      btnEn.setAttribute('aria-pressed', 'true');
+      btnTh.classList.remove('active');
+      btnTh.setAttribute('aria-pressed', 'false');
+    }
+  }
+
+  // Update all translatable elements
+  const dict = i18n[lang];
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (dict[key] !== undefined) {
+      if (dict[key].includes('<') && dict[key].includes('>')) {
+        el.innerHTML = dict[key];
+      } else {
+        el.textContent = dict[key];
+      }
+    }
+  });
+
+  // Update input placeholders
+  document.querySelectorAll('[data-i18n-ph]').forEach(el => {
+    const key = el.getAttribute('data-i18n-ph');
+    if (dict[key] !== undefined) {
+      el.placeholder = dict[key];
+    }
+  });
+
+  // Update simulator banner
+  if (typeof window.refreshFlowMode === 'function') {
+    window.refreshFlowMode();
+  }
+
+  // Update chat language
+  if (typeof window.refreshChatLanguage === 'function') {
+    window.refreshChatLanguage();
+  }
+
+  // Persist language choice
+  try {
+    localStorage.setItem('preferred_lang', lang);
+  } catch(e){}
+}
+
+document.getElementById('btn-lang-th')?.addEventListener('click', () => switchLanguage('th'));
+document.getElementById('btn-lang-en')?.addEventListener('click', () => switchLanguage('en'));
+
+const layers=[...document.querySelectorAll('.layer')];let count=3;const reveal=document.querySelector('.reveal');
+reveal.onclick=()=>{
+  count=count===3?1:count+1;
+  layers.forEach((el,i)=>el.hidden=i>=count);
+  const lang = window.currentLang || 'th';
+  if (count === 3) {
+    reveal.textContent = lang === 'th' ? 'สำรวจทีละชั้น' : 'Explore one layer at a time';
+  } else {
+    reveal.textContent = lang === 'th' ? 'เปิดดูชั้นถัดไป' : 'Reveal next layer';
+  }
+};
+
+const bar=document.querySelector(".reading-progress");function updateProgress(){const total=document.documentElement.scrollHeight-innerHeight;bar.style.width=(total>0?scrollY/total*100:0)+"%"}addEventListener("scroll",updateProgress,{passive:true});addEventListener("resize",updateProgress);updateProgress();
+
+document.querySelectorAll('.copy-btn').forEach(btn=>{
+  btn.onclick=async()=>{
+    const box=btn.closest('.prompt-box');
+    const promptTextToCopy=box.querySelector('.prompt-command').textContent.trim()+"\n\n"+box.querySelector('.prompt-text').textContent.trim();
+    try{await navigator.clipboard.writeText(promptTextToCopy)}
+    catch(e){
+      const ta=document.createElement('textarea');
+      ta.value=promptTextToCopy;
+      ta.style.position='fixed';
+      ta.style.opacity='0';
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+    }
+    const txt=btn.querySelector('.copy-btn-text');
+    const prev=txt.textContent;
+    btn.classList.add('copied');
+    txt.textContent= (window.currentLang === 'en') ? 'Copied! ✓' : 'คัดลอกแล้ว! ✓';
+    setTimeout(()=>{
+      btn.classList.remove('copied');
+      txt.textContent=prev;
+    },2200);
+  }
+});
+
+// Interactive Checklist Cards & Tree Linking
+(function() {
+  const checkCards = document.querySelectorAll('.check-card');
+  const treeSkillMd = document.getElementById('tree-node-skillmd');
+  const treeScripts = document.getElementById('tree-node-scripts');
+
+  function highlightTree(target) {
+    if (treeSkillMd) treeSkillMd.classList.remove('active-inspect');
+    if (treeScripts) treeScripts.classList.remove('active-inspect');
+
+    if (target === 'skillmd' && treeSkillMd) {
+      treeSkillMd.classList.add('active-inspect');
+    } else if (target === 'scripts' && treeScripts) {
+      treeScripts.classList.add('active-inspect');
+    }
+  }
+
+  checkCards.forEach(card => {
+    const target = card.getAttribute('data-target');
+
+    card.addEventListener('mouseenter', () => {
+      highlightTree(target);
+    });
+
+    card.addEventListener('mouseleave', () => {
+      const activeCard = document.querySelector('.check-card.active');
+      if (activeCard) {
+        highlightTree(activeCard.getAttribute('data-target'));
+      } else {
+        highlightTree(null);
+      }
+    });
+
+    card.addEventListener('click', (e) => {
+      const isExpanded = card.classList.contains('active');
+      const detail = card.querySelector('.check-card-detail');
+      if (isExpanded) {
+        card.classList.remove('active');
+        card.setAttribute('aria-expanded', 'false');
+        if (detail) detail.style.display = 'none';
+      } else {
+        card.classList.add('active');
+        card.setAttribute('aria-expanded', 'true');
+        if (detail) detail.style.display = 'flex';
+        highlightTree(target);
+      }
+    });
+
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        card.click();
+      }
+    });
+  });
+
+  treeSkillMd?.addEventListener('click', () => {
+    const card = document.getElementById('card-check-task');
+    if (card) {
+      card.classList.add('active');
+      card.setAttribute('aria-expanded', 'true');
+      const detail = card.querySelector('.check-card-detail');
+      if (detail) detail.style.display = 'flex';
+      card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      highlightTree('skillmd');
+    }
+  });
+
+  treeScripts?.addEventListener('click', () => {
+    const card = document.getElementById('card-check-tools');
+    if (card) {
+      card.classList.add('active');
+      card.setAttribute('aria-expanded', 'true');
+      const detail = card.querySelector('.check-card-detail');
+      if (detail) detail.style.display = 'flex';
+      card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      highlightTree('scripts');
+    }
+  });
+
+  // Initial highlight on first inspection card
+  highlightTree('skillmd');
+})();
+</script>
+<!-- น้องแพนด้า DAT Mascot Companion -->
+<div class="claude-runner-container" id="claude-companion" aria-label="น้องแพนด้า DAT อนิเมชั่น">
+  <div class="claude-character walking" id="claude-char" role="button" tabindex="0" title="คลิกเล่นกับน้องแพนด้า DAT! 🐼❤️">
+    <div class="claude-bubble" id="claude-bubble">
+      <span id="claude-bubble-text">สวัสดีครับ! 🐼</span>
+    </div>
+    <div class="claude-visual" id="claude-visual">
+      <svg class="claude-svg" viewBox="0 0 100 100" width="68" height="68" aria-hidden="true">
+        <!-- Shadow -->
+        <ellipse class="claude-shadow" cx="50" cy="94" rx="26" ry="5" fill="rgba(20,20,20,0.22)"/>
+        
+        <!-- Black Feet -->
+        <g class="claude-legs">
+          <ellipse class="claude-foot left-foot" cx="37" cy="88" rx="8" ry="6" fill="#1b1c19"/>
+          <ellipse class="claude-foot right-foot" cx="63" cy="88" rx="8" ry="6" fill="#1b1c19"/>
+        </g>
+        
+        <!-- Torso, Head, Ears, Face, Red Shirt -->
+        <g class="claude-torso">
+          <!-- Panda Ears -->
+          <circle cx="27" cy="23" r="11" fill="#1b1c19"/>
+          <circle cx="27" cy="23" r="6" fill="#2d2e2b"/>
+          <circle cx="73" cy="23" r="11" fill="#1b1c19"/>
+          <circle cx="73" cy="23" r="6" fill="#2d2e2b"/>
+
+          <!-- Cute Signature Yellow Rubber Duck on Head (from DAT Team Photo) -->
+          <g class="panda-duck" transform="translate(0, 1)">
+            <ellipse cx="50" cy="14" rx="6.5" ry="4.5" fill="#ffd13b"/>
+            <circle cx="53.5" cy="11" r="3.6" fill="#ffd13b"/>
+            <polygon points="56.5,10.2 60,11.2 56.5,12.2" fill="#ff7a18"/>
+            <circle cx="54.2" cy="10.2" r="0.75" fill="#111"/>
+          </g>
+
+          <!-- Panda Head -->
+          <ellipse cx="50" cy="38" rx="27" ry="23" fill="#ffffff" stroke="#e8e8e2" stroke-width="1.2"/>
+
+          <!-- Panda Black Eye Patches -->
+          <ellipse cx="36" cy="37" rx="8.5" ry="11" transform="rotate(18, 36, 37)" fill="#1b1c19"/>
+          <ellipse cx="64" cy="37" rx="8.5" ry="11" transform="rotate(-18, 64, 37)" fill="#1b1c19"/>
+
+          <!-- Sparkly Eyes with Blinking (Normal) -->
+          <g class="claude-eyes regular-eyes">
+            <ellipse cx="37.5" cy="36.5" rx="4.5" ry="5.5" fill="#ffffff"/>
+            <ellipse cx="38" cy="36.5" rx="3.5" ry="4.5" fill="#111111"/>
+            <circle cx="39.5" cy="34.5" r="1.6" fill="#ffffff"/>
+            <circle cx="36.5" cy="38" r="0.8" fill="#ffffff"/>
+            
+            <ellipse cx="62.5" cy="36.5" rx="4.5" ry="5.5" fill="#ffffff"/>
+            <ellipse cx="62" cy="36.5" rx="3.5" ry="4.5" fill="#111111"/>
+            <circle cx="63.5" cy="34.5" r="1.6" fill="#ffffff"/>
+            <circle cx="60.5" cy="38" r="0.8" fill="#ffffff"/>
+          </g>
+
+          <!-- Crying Squint Eyes (T_T) -->
+          <g class="crying-eyes">
+            <path d="M30 38 L38 33 L30 28" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M70 38 L62 33 L70 28" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+
+          <!-- Big Animated Waterfall Tears -->
+          <g class="crying-waterfall">
+            <path d="M36 36 C29 48, 28 68, 31 84 C34 72, 38 52, 39 36 Z" fill="#38bdf8" opacity="0.9"/>
+            <ellipse cx="31" cy="84" rx="4.2" ry="5" fill="#0284c7"/>
+            <circle cx="28" cy="86" r="2.2" fill="#38bdf8"/>
+            <path d="M64 36 C71 48, 72 68, 69 84 C66 72, 62 52, 61 36 Z" fill="#38bdf8" opacity="0.9"/>
+            <ellipse cx="69" cy="84" rx="4.2" ry="5" fill="#0284c7"/>
+            <circle cx="72" cy="86" r="2.2" fill="#38bdf8"/>
+          </g>
+
+          <!-- Rosy Blushing Cheeks -->
+          <ellipse cx="26" cy="45" rx="4.5" ry="2.5" fill="rgba(255,140,140,0.45)"/>
+          <ellipse cx="74" cy="45" rx="4.5" ry="2.5" fill="rgba(255,140,140,0.45)"/>
+
+          <!-- Snout, Nose and Mouth -->
+          <ellipse cx="50" cy="47" rx="9" ry="6.2" fill="#fcfcfb"/>
+          <path d="M46.8 45 Q50 43.2 53.2 45 Q50 48.8 46.8 45 Z" fill="#1b1c19"/>
+          
+          <!-- Regular Smiling Mouth -->
+          <path class="regular-mouth" d="M45.8 49 Q48 52.8 50 49 Q52 52.8 54.2 49" fill="none" stroke="#1b1c19" stroke-width="1.8" stroke-linecap="round"/>
+          
+          <!-- Crying Open Mouth -->
+          <path class="crying-mouth" d="M43 47 Q50 42 57 47 Q50 59 43 47 Z" fill="#b91c1c" stroke="#1b1c19" stroke-width="1.8"/>
+
+          <!-- Red DAT T-Shirt -->
+          <path d="M30 57 C22 62, 22 84, 30 85 C38 86, 62 86, 70 85 C78 84, 78 62, 70 57 C64 54, 36 54, 30 57 Z" fill="#e52b2b"/>
+          <path d="M41 56 Q50 61 59 56" fill="none" stroke="#b81b1b" stroke-width="2.2" stroke-linecap="round"/>
+          
+          <!-- Bold White DAT Text -->
+          <text id="panda-dat-text" x="50" y="74" font-family="'IBM Plex Sans',Arial,sans-serif" font-weight="900" font-size="14.5" fill="#ffffff" text-anchor="middle" letter-spacing="1">DAT</text>
+
+          <!-- Black Panda Arms & Paws -->
+          <ellipse class="claude-hand left-hand" cx="19" cy="67" rx="7" ry="6" fill="#1b1c19"/>
+          <ellipse class="claude-hand right-hand" cx="81" cy="67" rx="7" ry="6" fill="#1b1c19"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</div>
+<script>
+(function() {
+  const char = document.getElementById('claude-char');
+  const visual = document.getElementById('claude-visual');
+  const bubble = document.getElementById('claude-bubble');
+  const bubbleText = document.getElementById('claude-bubble-text');
+  if (!char || !visual) return;
+  // Respect "reduce motion": no walking mascot at all
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.getElementById('claude-companion').style.display = 'none';
+    return;
+  }
+
+    const datText = document.getElementById('panda-dat-text');
+
+  const quotesTh = [
+    "สวัสดีครับ! ผมน้องแพนด้า DAT 🐼",
+    "DAT Team ยินดีต้อนรับครับ! ❤️",
+    "ฮึบ! วิ่งเล่นไปกลับ 🏃‍♂️💨",
+    "Skills ช่วยสอนงาน AI ได้ตรงใจ ✨",
+    "เขียน know-how ไว้ครั้งเดียว สบายเลย 💡",
+    "จิ้มเบาๆ นะครับ อย่าแกล้งเค้านะ 🥺",
+    "พร้อมลุยเวิร์กช็อปแล้วครับ! 🚀"
+  ];
+  const quotesEn = [
+    "Hello! I'm DAT Panda 🐼",
+    "Welcome from the DAT Team! ❤️",
+    "Running around happily! 🏃‍♂️💨",
+    "Skills help AI work just the way you want! ✨",
+    "Write know-how once, reuse forever! 💡",
+    "Be gentle, please don't tease me! 🥺",
+    "Ready for the workshop! 🚀"
+  ];
+
+  const cryQuotesTh = [
+    "แงงงงงง! 😭 จิ้มเค้าทำไม เจ็บนะ!",
+    "ฮือออออ~ อย่าแกล้งเค้าสิ 🥺💦",
+    "ใจร้ายจังเลย! เค้ากำลังวิ่งเล่นอยู่นะ แงงงง 💔",
+    "น้ำตาท่วมจอแล้ว ฮือออออออ 😭",
+    "งอนแล้วนะ! ไม่คุยด้วยแล้ว 😿",
+    "แงงงงง! ร้องไห้จริงแล้วนะ ฮืออออ 💧"
+  ];
+  const cryQuotesEn = [
+    "Waaaah! 😭 Why did you poke me? That hurts!",
+    "Hooo~ Please don't tease me! 🥺💦",
+    "So mean! I was happily jogging, boohoo! 💔",
+    "Tears are flooding the screen! 😭",
+    "I'm pouting now! Not talking to you! 😿",
+    "Waaaah! Real tears now! 💧"
+  ];
+
+  let posX = 30;
+  let posY = window.innerHeight - 84;
+  let moveDir = 1; // 1 = right, -1 = left
+  const speed = 1.9;
+  let state = 'walking'; // walking | jumping | idle | crying
+  let stateUntil = Date.now() + 3500;
+  let isCrying = false;
+  let cryTimer = null;
+  let bubbleTimer = null;
+
+  function getBounds() {
+    return {
+      minX: 18,
+      maxX: Math.max(280, window.innerWidth - 86),
+      minY: 76,
+      maxY: Math.max(200, window.innerHeight - 84)
+    };
+  }
+
+  function say(text, ms = 3000) {
+    if (bubbleTimer) clearTimeout(bubbleTimer);
+    bubbleText.textContent = text;
+    bubble.style.top = 'auto';
+    bubble.style.bottom = '74px';
+    bubble.classList.add('show');
+    bubbleTimer = setTimeout(() => bubble.classList.remove('show'), ms);
+  }
+
+  function burstTears() {
+    const tearEmojis = ['💧', '💦', '😭', '🥺', '😿', '💔'];
+    for (let i = 0; i < 8; i++) {
+      const s = document.createElement('span');
+      s.className = 'claude-tear';
+      s.textContent = tearEmojis[Math.floor(Math.random() * tearEmojis.length)];
+      const ang = (Math.PI * 2 / 8) * i + (Math.random() * 0.4 - 0.2);
+      const d = 26 + Math.random() * 32;
+      s.style.setProperty('--tx', (Math.cos(ang) * d) + 'px');
+      s.style.setProperty('--ty', (Math.sin(ang) * d - 10) + 'px');
+      s.style.setProperty('--rot', (Math.random() * 140 - 70) + 'deg');
+      s.style.left = '25px';
+      s.style.top = '22px';
+      char.appendChild(s);
+      setTimeout(() => s.remove(), 950);
+    }
+  }
+
+  function triggerCrying() {
+    if (isCrying) return;
+    isCrying = true;
+    state = 'crying';
+    char.className = 'claude-character crying';
+    burstTears();
+    const isEn = window.currentLang === 'en';
+    const pool = isEn ? cryQuotesEn : cryQuotesTh;
+    say(pool[Math.floor(Math.random() * pool.length)], 3400);
+
+    if (cryTimer) clearTimeout(cryTimer);
+    cryTimer = setTimeout(() => {
+      say(isEn ? "Sniff... Friends again? No more teasing! 🐼✨" : "ฮึก... ดีกันนะ ไม่แกล้งเค้าแล้วนะ 🐼✨", 2600);
+      char.className = 'claude-character walking';
+      state = 'walking';
+      stateUntil = Date.now() + 3000;
+      isCrying = false;
+    }, 3200);
+  }
+
+  char.addEventListener('click', e => {
+    e.stopPropagation();
+    triggerCrying();
+  });
+  char.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      triggerCrying();
+    }
+  });
+
+  char.addEventListener('mouseenter', () => {
+    if (!bubble.classList.contains('show') && !isCrying) {
+      say(window.currentLang === 'en' ? "Please don't poke me! 🥺🐾" : "อย่าแกล้งจิ้มเค้านะครับ! 🥺🐾", 2200);
+    }
+  });
+
+  setTimeout(() => {
+    say(window.currentLang === 'en' ? "Hello! I'm DAT Panda 🐼" : "สวัสดีครับ! ผมน้องแพนด้า DAT 🐼", 3500);
+  }, 1200);
+
+  window.addEventListener('resize', () => {
+    const b = getBounds();
+    posX = Math.min(Math.max(posX, b.minX), b.maxX);
+    posY = b.maxY;
+  });
+
+  function loop() {
+    const now = Date.now();
+    const b = getBounds();
+    posY = b.maxY; // Always at bottom
+
+    if (!isCrying) {
+      if (now > stateUntil) {
+        const r = Math.random();
+        if (state === 'walking') {
+          if (r < 0.25) {
+            state = 'jumping';
+            char.className = 'claude-character jumping';
+            stateUntil = now + 650;
+            const curQuotes = (window.currentLang === 'en') ? quotesEn : quotesTh;
+            if (Math.random() < 0.45) say(curQuotes[Math.floor(Math.random() * curQuotes.length)], 2600);
+          } else if (r < 0.45) {
+            state = 'idle';
+            char.className = 'claude-character idle';
+            stateUntil = now + 1600 + Math.random() * 1000;
+          } else {
+            stateUntil = now + 2500 + Math.random() * 2500;
+          }
+        } else {
+          state = 'walking';
+          char.className = 'claude-character walking';
+          stateUntil = now + 2800 + Math.random() * 3000;
+        }
+      }
+
+      if (state === 'walking') {
+        // Move horizontally along bottom: Left <-> Right
+        posX += speed * moveDir;
+        if (moveDir > 0 && posX >= b.maxX) {
+          posX = b.maxX;
+          moveDir = -1; // Turn back left
+        } else if (moveDir < 0 && posX <= b.minX) {
+          posX = b.minX;
+          moveDir = 1; // Turn back right
+        }
+      }
+
+      char.style.left = posX + 'px';
+      char.style.top = posY + 'px';
+
+      // Orientation:
+      // When moving right (moveDir = 1): visual is scaleX(1), DAT text is normal
+      // When moving left (moveDir = -1): visual is scaleX(-1) (faces left),
+      // and DAT text has transform="translate(100, 0) scale(-1, 1)" so it is NOT reversed!
+      if (moveDir === -1) {
+        visual.style.transform = 'scaleX(-1)';
+        if (datText) datText.setAttribute('transform', 'translate(100, 0) scale(-1, 1)');
+      } else {
+        visual.style.transform = 'scaleX(1)';
+        if (datText) datText.removeAttribute('transform');
+      }
+    } else {
+      // While crying: face forward upright to viewer, trembling
+      char.style.left = posX + 'px';
+      char.style.top = posY + 'px';
+      visual.style.transform = 'scale(1.08)';
+      if (datText) datText.removeAttribute('transform');
+    }
+
+    requestAnimationFrame(loop);
+  }
+
+  requestAnimationFrame(loop);
+})();
+
+// Workflow Comparison Interactive Morph & Flow Animation (Fixed Frame + Continuous Loop)
+(function() {
+  const frame = document.getElementById('skill-flow-box');
+  const btnNoSkill = document.getElementById('btn-mode-noskill');
+  const btnWithSkill = document.getElementById('btn-mode-withskill');
+  const banner = document.getElementById('flow-mode-banner');
+  const bannerTag = document.getElementById('banner-tag');
+  const bannerText = document.getElementById('banner-text');
+  const bannerCount = document.getElementById('banner-count-badge');
+
+  // Step Cards
+  const nodeAsk = document.getElementById('node-ask');
+  const arrow1 = document.getElementById('arrow-1');
+  const nodeThink1 = document.getElementById('node-think-1');
+  const arrow2 = document.getElementById('arrow-2');
+
+  const nodeOutputNoSkill = document.getElementById('node-output-noskill');
+  const nodeReadSkill = document.getElementById('node-read-skill');
+  const pipeBridge = document.getElementById('pipeline-bridge') || document.getElementById('pipe-connector-down');
+
+  const nodeThink2 = document.getElementById('node-think-2');
+  const arrowBranch2 = document.getElementById('arrow-branch-2');
+  const nodeExecute = document.getElementById('node-execute');
+  const arrowBranch3 = document.getElementById('arrow-branch-3');
+  const nodeOutputWithSkill = document.getElementById('node-output-withskill');
+
+  if (!frame || !btnNoSkill || !btnWithSkill) return;
+
+  let currentMode = 'noskill'; // 'noskill' | 'withskill'
+  let animTimer = null;
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function clearAllActive() {
+    [nodeAsk, nodeThink1, nodeOutputNoSkill, nodeReadSkill, nodeThink2, nodeExecute, nodeOutputWithSkill].forEach(n => {
+      if (n) {
+        n.classList.remove('active', 'active-skill', 'active-output', 'done');
+      }
+    });
+    [arrow1, arrow2, arrowBranch2, arrowBranch3].forEach(a => {
+      if (a) a.classList.remove('active');
+    });
+    if (pipeBridge) pipeBridge.classList.remove('active');
+  }
+
+  // Continuous animation loop
+  function runFlow() {
+    if (animTimer) clearTimeout(animTimer);
+    clearAllActive();
+    // Reduced motion: show the steps as a still picture
+    if (reduceMotion) return;
+
+    if (currentMode === 'noskill') {
+      // Loop 3 steps: ถาม (1) -> คิด (2) -> ตอบ (3)
+      animTimer = setTimeout(() => {
+        nodeAsk?.classList.add('active');
+
+        animTimer = setTimeout(() => {
+          nodeAsk?.classList.remove('active'); nodeAsk?.classList.add('done');
+          arrow1?.classList.add('active');
+          nodeThink1?.classList.add('active');
+
+          animTimer = setTimeout(() => {
+            nodeThink1?.classList.remove('active'); nodeThink1?.classList.add('done');
+            arrow2?.classList.add('active');
+            nodeOutputNoSkill?.classList.add('active', 'active-output');
+
+            animTimer = setTimeout(() => {
+              runFlow();
+            }, 1500);
+          }, 850);
+        }, 850);
+      }, 100);
+
+    } else {
+      // Loop 6 steps inside pipeline:
+      // Row 1: ถาม (1) -> คิด (2) -> อ่าน Skill (3)
+      // Bridge: (3) -> (4)
+      // Row 2: คิด (4) -> ทำตาม (5) -> ตอบ output (6)
+      animTimer = setTimeout(() => {
+        nodeAsk?.classList.add('active');
+
+        animTimer = setTimeout(() => {
+          nodeAsk?.classList.remove('active'); nodeAsk?.classList.add('done');
+          arrow1?.classList.add('active');
+          nodeThink1?.classList.add('active');
+
+          animTimer = setTimeout(() => {
+            nodeThink1?.classList.remove('active'); nodeThink1?.classList.add('done');
+            arrow2?.classList.add('active');
+            nodeReadSkill?.classList.add('active', 'active-skill');
+
+            animTimer = setTimeout(() => {
+              nodeReadSkill?.classList.remove('active', 'active-skill'); nodeReadSkill?.classList.add('done');
+              pipeBridge?.classList.add('active');
+              nodeThink2?.classList.add('active');
+
+              animTimer = setTimeout(() => {
+                nodeThink2?.classList.remove('active'); nodeThink2?.classList.add('done');
+                arrowBranch2?.classList.add('active');
+                nodeExecute?.classList.add('active');
+
+                animTimer = setTimeout(() => {
+                  nodeExecute?.classList.remove('active'); nodeExecute?.classList.add('done');
+                  arrowBranch3?.classList.add('active');
+                  nodeOutputWithSkill?.classList.add('active', 'active-output');
+
+                  animTimer = setTimeout(() => {
+                    runFlow();
+                  }, 1600);
+                }, 850);
+              }, 850);
+            }, 1000);
+          }, 850);
+        }, 850);
+      }, 100);
+    }
+  }
+
+  function setMode(mode) {
+    currentMode = mode;
+    const lang = window.currentLang || 'th';
+    if (mode === 'noskill') {
+      frame.classList.remove('mode-withskill');
+      frame.classList.add('mode-noskill');
+      btnNoSkill.classList.add('active');
+      btnWithSkill.classList.remove('active');
+      btnNoSkill.setAttribute('aria-pressed', 'true');
+      btnWithSkill.setAttribute('aria-pressed', 'false');
+
+      banner.className = 'flow-mode-banner banner-noskill';
+      if (bannerTag) bannerTag.textContent = 'No Skill Mode';
+      if (bannerText) {
+        bannerText.textContent = lang === 'en'
+          ? 'AI executes 3 basic steps: Prompt ➔ Think ➔ Output (generic reasoning without domain guidance)'
+          : 'AI ทำงาน 3 ขั้นตอนพื้นฐาน: ถาม ➔ คิด ➔ ตอบ (ประมวลผลทั่วไป ไม่ได้อ้างอิงคู่มือเฉพาะ)';
+      }
+      if (bannerCount) {
+        bannerCount.textContent = lang === 'en' ? '3 Basic Steps' : '3 ขั้นตอนพื้นฐาน';
+      }
+    } else {
+      frame.classList.remove('mode-noskill');
+      frame.classList.add('mode-withskill');
+      btnWithSkill.classList.add('active');
+      btnNoSkill.classList.remove('active');
+      btnWithSkill.setAttribute('aria-pressed', 'true');
+      btnNoSkill.setAttribute('aria-pressed', 'false');
+
+      banner.className = 'flow-mode-banner banner-withskill';
+      if (bannerTag) bannerTag.textContent = 'With Skill.md Mode';
+      if (bannerText) {
+        bannerText.textContent = lang === 'en'
+          ? 'With Skill.md: AI reads SOP ➔ Plans ➔ Executes across 6 standardized steps for target accuracy'
+          : 'เมื่อมี Skill.md: AI ดึงคู่มือมาอ่าน ➔ วางแผน ➔ ทำตามกฎ 6 ขั้นตอนเพื่อผลลัพธ์ที่ตรงเป้าหมาย';
+      }
+      if (bannerCount) {
+        bannerCount.textContent = lang === 'en' ? '6 Standard Steps (Recommended)' : '6 ขั้นตอนมาตรฐาน (แนะนำ)';
+      }
+    }
+    runFlow();
+  }
+
+  window.refreshFlowMode = () => setMode(currentMode);
+
+  btnNoSkill.addEventListener('click', () => setMode('noskill'));
+  btnWithSkill.addEventListener('click', () => setMode('withskill'));
+
+  // Start in No Skill mode initially and keep looping continuously
+  setMode('noskill');
+})();
+// --- PANDA White Window Chat Logic (Clean Text Card) ---
+(function() {
+  const defaultMessages = [];
+
+  const STORAGE_KEY = 'hitap_panda_clean_window_v7';
+
+  // Purge previous test keys so the window starts as a clean, blank white display
+  try {
+    localStorage.removeItem('hitap_panda_clean_window_v6');
+    localStorage.removeItem('hitap_panda_clean_window_v5');
+    localStorage.removeItem('hitap_panda_clean_window_v4');
+    localStorage.removeItem('hitap_panda_messages');
+  } catch(e) {}
+
+  function getStoredMessages() {
+    try {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+      }
+    } catch(e) {}
+    return defaultMessages;
+  }
+
+  function saveStoredMessages(msgs) {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(msgs));
+    } catch(e) {}
+  }
+
+  function formatTime() {
+    const d = new Date();
+    const h = String(d.getHours()).padStart(2, '0');
+    const m = String(d.getMinutes()).padStart(2, '0');
+    return `${h}:${m}`;
+  }
+
+  const feed = document.getElementById('mac-messages-display');
+  const form = document.getElementById('mac-input-form');
+  const input = document.getElementById('mac-msg-input');
+  const charCounter = document.getElementById('mac-char-counter');
+  const emojiToggle = document.getElementById('mac-emoji-toggle');
+  const emojiDrawer = document.getElementById('mac-emoji-drawer');
+
+  function renderMessageItem(m) {
+    const item = document.createElement('div');
+    item.className = 'mac-msg-row';
+
+    const meta = document.createElement('div');
+    meta.className = 'mac-msg-meta';
+
+    const author = document.createElement('span');
+    author.className = 'mac-msg-author';
+    author.innerHTML = '🐼 PANDA';
+
+    const time = document.createElement('span');
+    time.className = 'mac-msg-time';
+    time.textContent = m.time || formatTime();
+
+    meta.appendChild(author);
+    meta.appendChild(time);
+
+    const body = document.createElement('div');
+    body.className = 'mac-msg-text';
+    body.textContent = m.text;
+
+    item.appendChild(meta);
+    item.appendChild(body);
+    return item;
+  }
+
+  function renderAllMessages(msgs, scrollBottom = false) {
+    if (!feed) return;
+    feed.innerHTML = '';
+    msgs.forEach(m => {
+      feed.appendChild(renderMessageItem(m));
+    });
+
+    if (scrollBottom) {
+      setTimeout(() => {
+        feed.scrollTo({ top: feed.scrollHeight, behavior: 'smooth' });
+      }, 50);
+    }
+  }
+
+  let chatList = getStoredMessages();
+  renderAllMessages(chatList, true);
+
+  // Character Counter update
+  function updateCharCount() {
+    if (!input || !charCounter) return;
+    const len = input.value.length;
+    charCounter.textContent = `${len}/500`;
+    if (len >= 480) {
+      charCounter.style.color = '#e04f44';
+      charCounter.style.fontWeight = '700';
+    } else {
+      charCounter.style.color = '#7d8174';
+      charCounter.style.fontWeight = 'normal';
+    }
+  }
+
+  if (input) {
+    input.addEventListener('input', updateCharCount);
+  }
+
+  // Form submission (Author is always PANDA, max 500 chars)
+  if (form && input) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const text = (input.value || '').trim();
+      if (!text) return;
+
+      const trimmedText = text.slice(0, 500);
+
+      const newMsg = {
+        id: 'msg_' + Date.now(),
+        text: trimmedText,
+        time: formatTime()
+      };
+
+      chatList.push(newMsg);
+      saveStoredMessages(chatList);
+      renderAllMessages(chatList, true);
+
+      input.value = '';
+      updateCharCount();
+      if (emojiDrawer) emojiDrawer.hidden = true;
+      input.focus();
+    });
+  }
+
+  // Toggle Emoji Picker Drawer
+  if (emojiToggle && emojiDrawer) {
+    emojiToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      emojiDrawer.hidden = !emojiDrawer.hidden;
+    });
+
+    emojiDrawer.querySelectorAll('.mac-emoji-item').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const emoji = btn.getAttribute('data-emoji') || btn.textContent.trim();
+        if (input) {
+          if (input.value.length + emoji.length <= 500) {
+            input.value += emoji;
+            updateCharCount();
+          }
+          input.focus();
+        }
+      });
+    });
+  }
+
+  // Close emoji drawer when clicking outside
+  document.addEventListener('click', (e) => {
+    if (emojiDrawer && !emojiDrawer.contains(e.target) && e.target !== emojiToggle) {
+      emojiDrawer.hidden = true;
+    }
+  });
+
+  window.refreshChatLanguage = () => {
+    renderAllMessages(chatList, false);
+  };
+})();
+
+// Restore saved language preference on load
+(function() {
+  try {
+    const saved = localStorage.getItem('preferred_lang') || 'th';
+    if (typeof switchLanguage === 'function') {
+      switchLanguage(saved);
+    }
+  } catch(e){}
+})();
+</script></body></html>
